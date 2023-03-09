@@ -1,3 +1,3 @@
-C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/CMakeFiles/BO_Assignment_2.dir
-C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/dynam/Desktop/BO-Assignment-2/cmake-build-debug/CMakeFiles/BO_Assignment_2.dir
+C:/Users/dynam/Desktop/BO-Assignment-2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/dynam/Desktop/BO-Assignment-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
