@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 // https://www.youtube.com/watch?v=USjZcfj8yxE
+// don't forget jack, you have to push the branch after you merge the branch.
 
 int main() {
     char options;
