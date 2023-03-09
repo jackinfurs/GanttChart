@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 // https://www.youtube.com/watch?v=USjZcfj8yxE
-// test!
 
 int main() {
     char options;
