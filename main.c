@@ -1,3 +1,10 @@
+/*  COMP10050 Assignment 2
+    Group BO:
+	    Martina D’Argenzio	22789139
+        Jack Dunne		22483576
+    https://csgitlab.ucd.ie/jack-dunne626/bo-assignment-2.git
+*/
+
 #include <stdio.h>
 
 // https://www.youtube.com/watch?v=USjZcfj8yxE
