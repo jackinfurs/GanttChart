@@ -2,5 +2,6 @@
 #define BO_ASSIGNMENT_2_DEFINITIONS_H
 
 #define MAX_LENGTH  64
+#define EMPTY       ""
 
 #endif //BO_ASSIGNMENT_2_DEFINITIONS_H

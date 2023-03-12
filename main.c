@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 #include "definitions.h"
-// MAX_LENGTH,
+// MAX_LENGTH, EMPTY
 
 // https://www.youtube.com/watch?v=USjZcfj8yxE
 
