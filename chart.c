@@ -71,7 +71,7 @@ else move forward
         if (f == 's')
         {
             fseek(fp,-1,SEEK_CUR);
-            fprintf("%*s", max_length, taskname);
+            fprintf("%*s", max_length, tasks[i].name);
         }
         i += 1;
     }
