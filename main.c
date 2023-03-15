@@ -10,13 +10,28 @@
 #include "struct.h"
 // definitions for MAX_LENGTH, EMPTY, MAX_TASKS
 
+/*
+ * For Martina:
+ * Below in "int main", add in error checking for the scanf statements
+ * e.g.: make sure invalid options cannot be entered.
+ *
+ * Below in int main, add in the option to enter dependencies to different tasks
+ * Check the briefing doc on Moodle for an example (far right column dependencies)
+ *
+ * In a new file called "placeholder.c"
+ * Create placeholder text for the example chart
+ * Create 10 tasks with different sample names, start months, end months, and dependencies
+ * (might have to research structs!)
+ *
+ */
+
 int main() {
     struct Task tasks[MAX_TASKS];
     int numOfTasks;
     int i, option;
 
     printf("Welcome to the Gantt Generator\n");
-    printf("Would you like to use the test example (1) or create your on Gantt from scratch (2)?\n");
+    printf("Would you like to use the test example (1) or create your own Gantt from scratch (2)?\n");
     scanf("%d", &option);
 
     if (option == 1)

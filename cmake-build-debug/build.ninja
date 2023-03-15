@@ -55,6 +55,12 @@ build CMakeFiles/BO_Assignment_2.dir/main.c.obj: C_COMPILER__BO_Assignment_2_Deb
   OBJECT_DIR = CMakeFiles\BO_Assignment_2.dir
   OBJECT_FILE_DIR = CMakeFiles\BO_Assignment_2.dir
 
+build CMakeFiles/BO_Assignment_2.dir/struct.c.obj: C_COMPILER__BO_Assignment_2_Debug C$:/Users/dynam/CLionProjects/BO-Assignment-2/struct.c || cmake_object_order_depends_target_BO_Assignment_2
+  DEP_FILE = CMakeFiles\BO_Assignment_2.dir\struct.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu99
+  OBJECT_DIR = CMakeFiles\BO_Assignment_2.dir
+  OBJECT_FILE_DIR = CMakeFiles\BO_Assignment_2.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target BO_Assignment_2
@@ -63,7 +69,7 @@ build CMakeFiles/BO_Assignment_2.dir/main.c.obj: C_COMPILER__BO_Assignment_2_Deb
 #############################################
 # Link the executable BO_Assignment_2.exe
 
-build BO_Assignment_2.exe: C_EXECUTABLE_LINKER__BO_Assignment_2_Debug CMakeFiles/BO_Assignment_2.dir/main.c.obj
+build BO_Assignment_2.exe: C_EXECUTABLE_LINKER__BO_Assignment_2_Debug CMakeFiles/BO_Assignment_2.dir/main.c.obj CMakeFiles/BO_Assignment_2.dir/struct.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\BO_Assignment_2.dir
