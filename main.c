@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include "definitions.h"
+#include "struct.h"
 // definitions for MAX_LENGTH, EMPTY, MAX_TASKS
 
 int main() {
