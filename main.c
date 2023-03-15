@@ -11,7 +11,7 @@
 
 struct Task
 {
-    char name[80];
+    char name[MAX_LENGTH];
     int start_month;
     int end_month;
     int dependencies;
@@ -26,7 +26,7 @@ int main() {
 
 
     printf("How many tasks would you like to add ? (1-10)\n");
-    scanf("%d", &numOfTasks);
+    scanf("%d", &numOfTasks); // using scanf, no need to worry about buffer overflow in 1st year project
 
     for (i = 0; i < numOfTasks; i++)
     {
@@ -34,18 +34,19 @@ int main() {
         scanf("%s", tasks[i].name);
 
         printf("Please enter the start month (1-12):\n");
-        scanf("%d", tasks[i].start_month);
+        scanf("%d", &tasks[i].start_month);
 
         printf("Please enter the end month (1-12):\n");
-        scanf("%d", tasks[i].end_month);
+        scanf("%d", &tasks[i].end_month);
 
         printf("Please enter how many dependencies this task has:\n");
-        scanf("%d", tasks[i].dependencies);
+        scanf("%d", &tasks[i].dependencies);
 
     }
 
 }
 
+/*
 void print_chart(struct Task tasks[], int numTasks) {
     int months = 12;
 
@@ -54,18 +55,16 @@ void print_chart(struct Task tasks[], int numTasks) {
            "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec", "Dependencies");
     printf("---------------------------------------------------------------------------------------------");
 
-    for (int i = 0; i < numTasks; i++)
-    {
+    for (int i = 0; i < numTasks; i++) {
         printf("|%-20s|", tasks[i].name);
 
-        for (int int j = 0; j < months; j++)
-        {
+        for (int int j = 0; j < months; j++) {
             if ()
         }
 
     }
-
-
+}
+*/
 
 /*
 ....................................................................................................
