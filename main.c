@@ -25,17 +25,12 @@ int main() {
     printf("Welcome to the Gantt Generator\n");
 
     /*
-     Function: Viewing example chart: to create the table, clear the screen first
-Task display:
-Declare variable max-length for string. Update variable with string length of inputted task name if length > variable. When printing, printf("%*s |", max_length, taskname);.
-		Placeholder task names:
-		Lorem / ipsum / dolor / sit / amet / consectetur / adipiscing / elit / sed / do
-		Global char array “months” of size 12, (malloc of size 4 for each entry???),
-(“Jan”,”Feb”,”Mar”,”Apr”,”May”,”Jun”,”Jul”,”Aug”,”Sep”,”Oct”,”Nov”,”Dec”);
-Definition: global char EMPTY = “” (for table row 0 col 0)
-
-Size of months columns are to be 5 spaces wide, 1 space padding on either side of the month at row 0, and 2 spaces on each side of the “X” to mark a task.
-ask to edit, test, or quit (objective 2) (strcmp input, edit test quit != 0, invalid)
+     * Function: Create own series of tasks: using a struct with name, start/end month, and dependencies
+     How many tasks? (0 invalid, else iterate for number of tasks entered)
+			Task name (malloc string)
+			Start/end month (input <= 0 or > 12, invalid input)
+    Number of dependencies (0 = skip, else iterate for number of dependencies entered)
+				Dependent task(s) (input <= 0 or > task number, invalid input)
 
      */
 
