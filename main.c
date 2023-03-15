@@ -6,6 +6,7 @@
 */
 
 #include <stdio.h>
+#include <string.h>
 #include "definitions.h"
 #include "struct.h"
 // definitions for MAX_LENGTH, EMPTY, MAX_TASKS
@@ -24,6 +25,8 @@
  * (might have to research structs!)
  *
  */
+
+int maxLength = 0;
 
 int main() {
     struct Task tasks[MAX_TASKS];
@@ -84,6 +87,13 @@ int main() {
 
         }
 
+        for (i = 0 ; i < numOfTasks ; ++i)
+        {
+            if (strlen(tasks[i].name) > maxLength)
+            {
+                maxLength = (int) strlen(tasks[i].name);
+            }
+        }
     }
 
 }
