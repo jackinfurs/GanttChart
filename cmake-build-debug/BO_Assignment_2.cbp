@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Martina/Desktop/BOAssignmento2/definitions.h">
+			<Option target="BO_Assignment_2"/>
+		</Unit>
 		<Unit filename="C:/Users/Martina/Desktop/BOAssignmento2/main.c">
 			<Option target="BO_Assignment_2"/>
 		</Unit>

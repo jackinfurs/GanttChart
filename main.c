@@ -9,16 +9,64 @@
 #include "definitions.h"
 // MAX_LENGTH, EMPTY
 
-// https://www.youtube.com/watch?v=USjZcfj8yxE
+#define MAX_TASKS 10
+
+typedef struct Task {
+    char name[80];
+    int start_month;
+    int end_month;
+    int dependencies;
+};
 
 int main() {
-    char options;
 
-    printf ("Welcome to the Gantt Generator\n");
-    printf("Would you like to use the test example or create your own Gantt from scratch? (yes or no)\n");
-    scanf(" %s", &options);
+    struct Task tasks[MAX_TASKS];
+    int numOfTasks;
+    int i, j;
+
+    printf("Welcome to the Gantt Generator\n");
+
+
+    printf("How many tasks would you like to add ? (1-10)\n");
+    scanf("%d", &numOfTasks);
+
+    for (i = 0; i < numOfTasks; i++) {
+        printf("Please enter the name of task %d:\n", i + 1);
+        scanf("%s", tasks[i].name);
+
+        printf("Please enter the start month (1-12):\n");
+        scanf("%d", tasks[i].start_month);
+
+        printf("Please enter the end month (1-12):\n");
+        scanf("%d", tasks[i].end_month);
+
+        printf("Please enter how many dependencies this task has:\n");
+        scanf("%d", tasks[i].dependencies);
+
+    }
 
 }
+
+void print_chart (struct Task tasks[], int numTasks)
+{
+    int months = 12;
+
+    printf("---------------------------------------------------------------------------------------------");
+    printf("|%-20s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s", "Task", "Jan", "Feb","March","April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec", "Dependencies");
+    printf("---------------------------------------------------------------------------------------------");
+
+    for(int i=0; i<numTasks; i++)
+    {
+        printf("|%-20s|", tasks[i].name);
+
+        for(int int j = 0; j < months; j++)
+        {
+            if ()
+        }
+
+}
+
+
 
 /*
 ....................................................................................................
@@ -80,3 +128,4 @@ int main() {
      .,xWMMMMMMMMMMMMMMMMMMMMMMMWO,                 ....'',;,;,'.  ..''....         ..   ...  .
     .,dNMMMMMMMMMMMMMMMMMMMMMMMM0;              ...........;;,.  ...''...          ..   ..  ...   .'
 */
+}
