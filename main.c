@@ -9,6 +9,8 @@
 #include "definitions.h"
 // definitions for MAX_LENGTH, EMPTY, MAX_TASKS
 
+
+// using a struct with name, start/end month, and dependencies
 struct Task
 {
     char name[MAX_LENGTH];
@@ -20,36 +22,41 @@ struct Task
 int main() {
     struct Task tasks[MAX_TASKS];
     int numOfTasks;
-    int i, j;
+    int i, option;
 
     printf("Welcome to the Gantt Generator\n");
+    printf("Would you like to use the test example (1) or create your on Gantt from scratch (2)?\n");
+    scanf("%d", &option);
 
-    /*
-     * Function: Create own series of tasks: using a struct with name, start/end month, and dependencies
-     How many tasks? (0 invalid, else iterate for number of tasks entered)
-			Task name (malloc string)
-			Start/end month (input <= 0 or > 12, invalid input)
-    Number of dependencies (0 = skip, else iterate for number of dependencies entered)
-				Dependent task(s) (input <= 0 or > task number, invalid input)
-
-     */
-
-    printf("How many tasks would you like to add ? (1-10)\n");
-    scanf("%d", &numOfTasks); // using scanf, no need to worry about buffer overflow in 1st year project
-
-    for (i = 0; i < numOfTasks; i++)
+    if (option == 1)
     {
-        printf("Please enter the name of task %d:\n", i + 1);
-        scanf("%s", tasks[i].name);
+        // pre-generated
+    } else if (option == 2) {
 
-        printf("Please enter the start month (1-12):\n");
-        scanf("%d", &tasks[i].start_month);
+        // Create own series of tasks: using a struct with name, start/end month, and dependencies
 
-        printf("Please enter the end month (1-12):\n");
-        scanf("%d", &tasks[i].end_month);
+        // How many tasks? (0 invalid, else iterate for number of tasks entered)
+        printf("How many tasks would you like to add ? (1-10)\n");
+        scanf("%d", &numOfTasks); // using scanf, no need to worry about buffer overflow in 1st year project
 
-        printf("Please enter how many dependencies this task has:\n");
-        scanf("%d", &tasks[i].dependencies);
+        for (i = 0; i < numOfTasks; i++) {
+            // Task name
+            printf("Please enter the name of task %d:\n", i + 1);
+            scanf("%s", tasks[i].name);
+
+            // Start/end month (input <= 0 or > 12, invalid input)
+            printf("Please enter the start month (1-12):\n");
+            scanf("%d", &tasks[i].start_month);
+
+            // Start/end month (input <= 0 or > 12, invalid input)
+            printf("Please enter the end month (1-12):\n");
+            scanf("%d", &tasks[i].end_month);
+
+            // Number of dependencies (0 = skip, else iterate for number of dependencies entered)
+            printf("Please enter how many dependencies this task has:\n");
+            scanf("%d", &tasks[i].dependencies);
+
+        }
 
     }
 
