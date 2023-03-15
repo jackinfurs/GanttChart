@@ -33,6 +33,10 @@ int main() {
     printf("Welcome to the Gantt Generator\n");
     printf("Would you like to use the test example (1) or create your own Gantt from scratch (2)?\n");
     scanf("%d", &option);
+    if (option != 0 && option != 1)
+    {
+        printf("Invalid options\n");
+    }
 
     if (option == 1)
     {
@@ -44,6 +48,10 @@ int main() {
         // How many tasks? (0 invalid, else iterate for number of tasks entered)
         printf("How many tasks would you like to add ? (1-10)\n");
         scanf("%d", &numOfTasks); // using scanf, no need to worry about buffer overflow in 1st year project
+        if (numOfTasks < 1 || numOfTasks > 10)
+        {
+            printf("Invalid value\n");
+        }
 
         for (i = 0; i < numOfTasks; i++) {
             // Task name
@@ -54,9 +62,19 @@ int main() {
             printf("Please enter the start month (1-12):\n");
             scanf("%d", &tasks[i].start_month);
 
+               if (tasks[i].start_month <= 0 || tasks[i].start_month > 12)
+               {
+                   printf("Invalid value\n");
+               }
+
             // Start/end month (input <= 0 or > 12, invalid input)
             printf("Please enter the end month (1-12):\n");
             scanf("%d", &tasks[i].end_month);
+
+                if (tasks[i].end_month <= 0 || tasks[i].end_month > 12)
+                {
+                    printf("Invalid value\n");
+                }
 
             // Number of dependencies (0 = skip, else iterate for number of dependencies entered)
             printf("Please enter how many dependencies this task has:\n");
