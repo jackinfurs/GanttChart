@@ -11,6 +11,8 @@
 
 #define MAX_TASKS 10
 
+// test
+
 typedef struct Task {
     char name[80];
     int start_month;
