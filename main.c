@@ -7,13 +7,10 @@
 
 #include <stdio.h>
 #include "definitions.h"
-// MAX_LENGTH, EMPTY
+// definitions for MAX_LENGTH, EMPTY, MAX_TASKS
 
-#define MAX_TASKS 10
-
-// test
-
-typedef struct Task {
+struct Task
+{
     char name[80];
     int start_month;
     int end_month;
@@ -21,7 +18,6 @@ typedef struct Task {
 };
 
 int main() {
-
     struct Task tasks[MAX_TASKS];
     int numOfTasks;
     int i, j;
@@ -32,7 +28,8 @@ int main() {
     printf("How many tasks would you like to add ? (1-10)\n");
     scanf("%d", &numOfTasks);
 
-    for (i = 0; i < numOfTasks; i++) {
+    for (i = 0; i < numOfTasks; i++)
+    {
         printf("Please enter the name of task %d:\n", i + 1);
         scanf("%s", tasks[i].name);
 
@@ -49,24 +46,24 @@ int main() {
 
 }
 
-void print_chart (struct Task tasks[], int numTasks)
-{
+void print_chart(struct Task tasks[], int numTasks) {
     int months = 12;
 
     printf("---------------------------------------------------------------------------------------------");
-    printf("|%-20s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s", "Task", "Jan", "Feb","March","April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec", "Dependencies");
+    printf("|%-20s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s|%-10s|-%10s", "Task", "Jan", "Feb",
+           "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec", "Dependencies");
     printf("---------------------------------------------------------------------------------------------");
 
-    for(int i=0; i<numTasks; i++)
+    for (int i = 0; i < numTasks; i++)
     {
         printf("|%-20s|", tasks[i].name);
 
-        for(int int j = 0; j < months; j++)
+        for (int int j = 0; j < months; j++)
         {
             if ()
         }
 
-}
+    }
 
 
 
