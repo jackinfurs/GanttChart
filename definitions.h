@@ -1,7 +1,8 @@
 #ifndef BO_ASSIGNMENT_2_DEFINITIONS_H
 #define BO_ASSIGNMENT_2_DEFINITIONS_H
 
-#define MAX_LENGTH  64
+#define MAX_LENGTH  32
 #define EMPTY       ""
+#define MAX_TASKS 10
 
 #endif //BO_ASSIGNMENT_2_DEFINITIONS_H
