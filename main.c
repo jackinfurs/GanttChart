@@ -126,4 +126,3 @@ void print_chart(struct Task tasks[], int numTasks) {
      .,xWMMMMMMMMMMMMMMMMMMMMMMMWO,                 ....'',;,;,'.  ..''....         ..   ...  .
     .,dNMMMMMMMMMMMMMMMMMMMMMMMM0;              ...........;;,.  ...''...          ..   ..  ...   .'
 */
-}
