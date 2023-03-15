@@ -3,6 +3,6 @@
 
 #define MAX_LENGTH  32
 #define EMPTY       ""
-#define MAX_TASKS 10
+#define MAX_TASKS   10
 
 #endif //BO_ASSIGNMENT_2_DEFINITIONS_H

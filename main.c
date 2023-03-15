@@ -1,23 +1,13 @@
 /*  COMP10050 Assignment 2
     Group BO:
 	    Martina D’Argenzio	22789139
-        Jack Dunne		22483576
+        Jack Dunne		    22483576
     https://csgitlab.ucd.ie/jack-dunne626/bo-assignment-2.git
 */
 
 #include <stdio.h>
 #include "definitions.h"
 // definitions for MAX_LENGTH, EMPTY, MAX_TASKS
-
-
-// using a struct with name, start/end month, and dependencies
-struct Task
-{
-    char name[MAX_LENGTH];
-    int start_month;
-    int end_month;
-    int dependencies;
-};
 
 int main() {
     struct Task tasks[MAX_TASKS];

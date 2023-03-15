@@ -99,7 +99,9 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -114,6 +116,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "definitions.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "placeholder.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "struct.h",
 			"sourceGroupIndex" : 1
 		}
 	],
