@@ -24,7 +24,6 @@ int main() {
 
     printf("Welcome to the Gantt Generator\n");
 
-
     printf("How many tasks would you like to add ? (1-10)\n");
     scanf("%d", &numOfTasks); // using scanf, no need to worry about buffer overflow in 1st year project
 
