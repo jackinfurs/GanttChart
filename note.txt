@@ -1,2 +1,24 @@
-git init
-git remote add origin YOURURL
+Task:
+to set up the gantt table, taking in arbitrary values
+
+	main
+	global int var max-length
+
+	for taskname
+		if taskname.length > max-length
+			max-length = taskname.length
+
+	function
+	copy formatTemplate to format file
+	open file
+	read through every char until a newline, 
+	at x, if the start month >= enum value && end month <= enum value, enter X, if not then replace with a space
+	at s, fprintf("%*s", max_length, taskname);
+	at f, fprintf("%*s", max-length, EMPTY);
+	at y, if num of dependencies > 0, enter dependencies (may be string or some shit)
+	at newline, skip another line and repeat
+	at eof, return 0
+	else move forward
+
+function
+fopen
