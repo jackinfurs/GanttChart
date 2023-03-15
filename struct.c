@@ -1,5 +1,19 @@
-#include "struct.h"
+
 #include "definitions.h"
+
+/*struct Dependencies
+{
+    int dep1;
+    int dep2;
+    int dep3;
+    int dep4;
+    int dep5;
+    int dep6;
+    int dep7;
+    int dep8;
+    int dep9;
+    int dep10;
+};*/
 
 // using a struct with name, start/end month, and dependencies
 struct Task
@@ -7,5 +21,6 @@ struct Task
     char name[MAX_LENGTH];
     int start_month;
     int end_month;
-    int dependencies;
-} task1, task2, tak3, task4, task5, task6, task7, task8, task9, task10;
+    int numbOfDepen;
+    int dependencies [];
+};

@@ -6,9 +6,11 @@
 */
 
 #include <stdio.h>
+#include <string.h>
 #include "definitions.h"
 #include "struct.h"
 // definitions for MAX_LENGTH, EMPTY, MAX_TASKS
+
 
 /*
  * For Martina:
@@ -25,15 +27,30 @@
  *
  */
 
+void dependencies_count (int numbOfDepen)
+{
+    //
+    char dependencies[MAX_LENGTH];
+    char input[MAX_LENGTH];
+    for (int i = 0; i<numbOfDepen; i++)
+    {
+        printf("Enter the dependent task:\n");
+        scanf("%s",&input);
+        strcat(" ",input);
+        strcpy(&dependencies[i],input);
+    }
+}
+
 int main() {
     struct Task tasks[MAX_TASKS];
     int numOfTasks;
-    int i, option;
+    int i, j, option;
+
 
     printf("Welcome to the Gantt Generator\n");
     printf("Would you like to use the test example (1) or create your own Gantt from scratch (2)?\n");
     scanf("%d", &option);
-    if (option != 0 && option != 1)
+    if (option != 1 && option != 2)
     {
         printf("Invalid options\n");
     }
@@ -78,15 +95,26 @@ int main() {
 
             // Number of dependencies (0 = skip, else iterate for number of dependencies entered)
             printf("Please enter how many dependencies this task has:\n");
-            scanf("%d", &tasks[i].dependencies);
+            scanf("%d", &tasks[i].numbOfDepen);
+            if (tasks[i].numbOfDepen > 0)
+            {
+               for (j = 0; j<tasks[i].numbOfDepen; j++)
+               {
+                   printf("Enter the dependent task:\n");
+                   scanf("%d", &tasks[i].dependencies[j]);
+               }
 
-            // ^^ for dependencies, add into int array maybe? max tasks of 10 for size
+                //dependencies_count(tasks[i].numbOfDepen);
+            }
+
 
         }
 
     }
 
 }
+
+
 
 /*
 void print_chart(struct Task tasks[], int numTasks) {
