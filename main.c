@@ -30,7 +30,6 @@ int maxLength = 0;
 
 void dependencies_count (int numbOfDepen)
 {
-    //
     char dependencies[MAX_LENGTH];
     char input[MAX_LENGTH];
     for (int i = 0; i<numbOfDepen; i++)
@@ -111,13 +110,7 @@ int main() {
 
         }
 
-        for (i = 0 ; i < numOfTasks ; ++i)
-        {
-            if (strlen(tasks[i].name) > maxLength)
-            {
-                maxLength = (int) strlen(tasks[i].name);
-            }
-        }
+
     }
 
 }

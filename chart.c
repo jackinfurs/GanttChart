@@ -1,7 +1,20 @@
 #include <stdio.h>
+#include <string.h>
 #include "chart.h"
 #include "definitions.h"
 #include "struct.h"
+
+// this is a fucking problem
+int maxLength(struct Task tasks[MAX_TASKS]) {
+    int numOfTasks = 0;
+    for (int i = 0 ; i < numOfTasks ; ++i)
+    {
+        if (strlen(tasks[i].name) > maxLength)
+        {
+            maxLength = strlen(tasks[i].name);
+        }
+    }
+}
 
 void copyFile()
 {
@@ -26,7 +39,7 @@ void copyFile()
         fclose(fptr2);
 }
 
-int ganttChart(struct Task tasks)
+int ganttChart(struct Task tasks[MAX_TASKS])
 {/*
 read through every char until a newline,
 at x, if the start month >= enum value && end month <= enum value, enter X, if not then replace with a space
@@ -41,10 +54,27 @@ else move forward
 
     FILE *fp;
     fp = fopen("format","w");
+    int i = 0;
     int month = 1;
 
-    f = fgetc();
-    while ()
+    char f = fgetc(fp);
+    while (fgetc(fp) != EOF)
+    {
+        if (f == 'x')
+        {
+            if (tasks[i].start_month >= month && tasks[i].end_month <= month)
+            {
+                fseek(fp,-1,SEEK_CUR);
+                fputc('X',fp);
+            }
+        }
+        if (f == 's')
+        {
+            fseek(fp,-1,SEEK_CUR);
+            fprintf("%*s", max_length, taskname);
+        }
+        i += 1;
+    }
 
     fclose(fp);
     return 0;
