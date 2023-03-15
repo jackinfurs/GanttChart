@@ -80,6 +80,7 @@ int main() {
             printf("Please enter how many dependencies this task has:\n");
             scanf("%d", &tasks[i].dependencies);
 
+            // ^^ for dependencies, add into int array maybe? max tasks of 10 for size
 
         }
 

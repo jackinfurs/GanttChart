@@ -152,6 +152,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/main.c.s
 .PHONY : main.c.s
 
+placeholder.obj: placeholder.c.obj
+.PHONY : placeholder.obj
+
+# target to build an object file
+placeholder.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj
+.PHONY : placeholder.c.obj
+
+placeholder.i: placeholder.c.i
+.PHONY : placeholder.i
+
+# target to preprocess a source file
+placeholder.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/placeholder.c.i
+.PHONY : placeholder.c.i
+
+placeholder.s: placeholder.c.s
+.PHONY : placeholder.s
+
+# target to generate assembly for a file
+placeholder.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/placeholder.c.s
+.PHONY : placeholder.c.s
+
 struct.obj: struct.c.obj
 .PHONY : struct.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... placeholder.obj
+	@echo ... placeholder.i
+	@echo ... placeholder.s
 	@echo ... struct.obj
 	@echo ... struct.i
 	@echo ... struct.s
