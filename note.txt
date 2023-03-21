@@ -22,3 +22,10 @@ to set up the gantt table, taking in arbitrary values
 
 function
 fopen
+
+for the circular dependencies error checking
+global int var for the fucking error checking recursive shit
+if var > 3, return to editor via label
+(research labels in c)
+
+fscanf(fptr, "| %c | %c | %c | %c | %c | %c | %c | %c | %c | %c | %c | %c | Dependencies")
