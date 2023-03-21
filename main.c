@@ -64,7 +64,6 @@ int main()
 
     if (option == 1) {
         // pre-generated
-        ganttChart();
     } else if (option == 2) {
 
         // Create own series of tasks: using a struct with name, start/end month, and dependencies
@@ -125,28 +124,31 @@ int main()
             scanf(" %s", &choice);
 
             if (strcmp(choice, edit) == 0) {
-
                 char name[MAX_LENGTH];
                 printf("Please enter the task name you wish to change\n");
-                scanf(" %s", &name[i]);
+                scanf(" %s",&name);
+                // set i equal to the index of the inputted name in the struct
 
-                if (strcmp(name, tasks[i].name) == 0) {
-                printf("Please enter the new task name or write its old one\n");
-                scanf(" %s", &tasks[i].name);
+                // for loop to go through each and every task until input = name of task
+                // return i - 1 when done (still increments 1 after the condition statement)
 
-                printf("Start month (1-12):\n");
-                scanf(" %d", &tasks[i].start_month);
+                // this shouldn't work
+                if (strcmp(tasks[i].name, name) != 0) {
+                    printf("Please enter the new task name or write its old one\n");
+                    scanf(" %s", &tasks[i].name);
 
-                printf("End month (1-12):\n");
-                scanf(" %d", &tasks[i].end_month);
+                    printf("Start month (1-12):\n");
+                    scanf(" %d", &tasks[i].start_month);
 
-                printf("Enter how many dependencies this task has:\n");
-                scanf(" %d", &tasks[i].numbOfDepen);
-                if (tasks[i].numbOfDepen > 0) {
-                for (j = 0; j < tasks[i].numbOfDepen; j++) {
-                    printf("Enter the dependent task:\n");
-                    scanf(" %d", &tasks[i].dependencies[j]);
+                    printf("End month (1-12):\n");
+                    scanf(" %d", &tasks[i].end_month);
 
+                    printf("Enter how many dependencies this task has:\n");
+                    scanf(" %d", &tasks[i].numbOfDepen);
+                    if (tasks[i].numbOfDepen > 0) {
+                        for (j = 0; j < tasks[i].numbOfDepen; j++) {
+                            printf("Enter the dependent task:\n");
+                            scanf(" %d", &tasks[i].dependencies[j]);
                 }
             }
         }
