@@ -5,7 +5,6 @@
 #include "struct.h"
 
 int maxLength = 0;
-const int numOfTasks;
 
 enum months
 {
