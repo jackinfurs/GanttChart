@@ -8,98 +8,98 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="BO_Assignment_2">
-				<Option output="C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/BO_Assignment_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug"/>
+				<Option output="C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/BO_Assignment_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 					<Add directory="/mingw/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 BO_Assignment_2"/>
-					<CompileFile command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 BO_Assignment_2"/>
+					<CompileFile command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="BO_Assignment_2/fast">
-				<Option output="C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/BO_Assignment_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug"/>
+				<Option output="C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/BO_Assignment_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 					<Add directory="/mingw/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 BO_Assignment_2/fast"/>
-					<CompileFile command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 BO_Assignment_2/fast"/>
+					<CompileFile command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/dynam/CLionProjects/BO-Assignment-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Martina/Desktop/BOAssignmento2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/chart.c">
+		<Unit filename="C:/Users/Martina/Desktop/BOAssignmento2/chart.c">
 			<Option target="BO_Assignment_2"/>
 		</Unit>
-		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/chart.h">
+		<Unit filename="C:/Users/Martina/Desktop/BOAssignmento2/chart.h">
 			<Option target="BO_Assignment_2"/>
 		</Unit>
-		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/main.c">
+		<Unit filename="C:/Users/Martina/Desktop/BOAssignmento2/main.c">
 			<Option target="BO_Assignment_2"/>
 		</Unit>
-		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/placeholder.c">
+		<Unit filename="C:/Users/Martina/Desktop/BOAssignmento2/placeholder.c">
 			<Option target="BO_Assignment_2"/>
 		</Unit>
-		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/placeholder.h">
+		<Unit filename="C:/Users/Martina/Desktop/BOAssignmento2/placeholder.h">
 			<Option target="BO_Assignment_2"/>
 		</Unit>
-		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/struct.c">
+		<Unit filename="C:/Users/Martina/Desktop/BOAssignmento2/struct.c">
 			<Option target="BO_Assignment_2"/>
 		</Unit>
-		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/struct.h">
+		<Unit filename="C:/Users/Martina/Desktop/BOAssignmento2/struct.h">
 			<Option target="BO_Assignment_2"/>
 		</Unit>
-		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/CMakeLists.txt">
+		<Unit filename="C:/Users/Martina/Desktop/BOAssignmento2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
