@@ -5,6 +5,7 @@
     https://csgitlab.ucd.ie/jack-dunne626/bo-assignment-2.git
 */
 
+// include necessary libs
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
