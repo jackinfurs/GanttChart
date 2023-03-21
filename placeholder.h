@@ -10,8 +10,9 @@ typedef struct
     int start_month;
     int end_month;
     int numbOfDepen;
-    int dependencies[];
+    int dependencies[MAX_TASKS];
 } Task;
+
 Task placeholder[MAX_TASKS] = {
         {"task_1",  1,  2,  0, {0}},
         {"task_2",  1,  4,  0, {0}},
