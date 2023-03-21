@@ -26,10 +26,10 @@
  * (might have to research structs!)
  *
  */
+int maxLength = 0;
 
 /*void dependencies_count (int numbOfDepen)
 {
-    //
     char dependencies[MAX_LENGTH];
     char input[MAX_LENGTH];
     for (int i = 0; i<numbOfDepen; i++)
@@ -112,6 +112,7 @@ int main() {
 
 
         }
+
 
     }
 
