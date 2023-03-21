@@ -37,8 +37,9 @@ const char *const months_str[] =
                 [DEC] = "Dec"
         };
 
-void max_Length(struct Task tasks[MAX_TASKS]) {
-    for (int i = 0 ; i < numOfTasks ; ++i)
+void max_Length(struct Task tasks[MAX_TASKS])
+{
+    for (int i = 0 ; i < taskNum ; ++i)
     {
         if (strlen(tasks[i].name) > maxLength)
         {
@@ -49,28 +50,28 @@ void max_Length(struct Task tasks[MAX_TASKS]) {
 
 void copyFile()
 {
-        FILE *fptr1, *fptr2;
-        char c;
+    FILE *fptr1, *fptr2;
+    char c;
 
-        // Open template for reading
-        fptr1 = fopen("formatTemplate", "r");
+    // Open template for reading
+    fptr1 = fopen("formatTemplate", "r");
 
-        // Open working file for writing
-        fptr2 = fopen("format", "w");
+    // Open working file for writing
+    fptr2 = fopen("format", "w");
 
-        // Read contents from template and copy to other
+    // Read contents from template and copy to other
+    c = (char) fgetc(fptr1);
+    while (c != EOF)
+    {
+        fputc(c, fptr2);
         c = (char) fgetc(fptr1);
-        while (c != EOF)
-        {
-            fputc(c, fptr2);
-            c = (char) fgetc(fptr1);
-        }
+    }
 
-        fclose(fptr1);
-        fclose(fptr2);
+    fclose(fptr1);
+    fclose(fptr2);
 }
 
-int ganttChart(struct Task tasks[MAX_TASKS],int taskNum)
+int ganttChart(struct Task tasks[MAX_TASKS], int taskNum)
 {/*
 read through every char until a newline,
 at x, if the start month >= enum value && end month <= enum value, enter X, if not then replace with a space
@@ -84,7 +85,7 @@ else move forward
     copyFile();
 
     FILE *fp;
-    fp = fopen("format","w");
+    fp = fopen("format", "w");
     int i = 0;
 
     /*

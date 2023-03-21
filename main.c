@@ -42,7 +42,7 @@ int main()
     // example (to edit)
     if (option == 1)
     {
-        ganttChart(placeholder,MAX_TASKS);
+        ganttChart(placeholder, MAX_TASKS);
 
     } else if (option == 2)
     {
