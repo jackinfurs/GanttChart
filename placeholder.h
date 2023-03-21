@@ -4,82 +4,37 @@
 
 #include "struct.h"
 
-typedef struct Task placeholder[MAX_TASKS];
+typedef struct
+{
+    char name[MAX_LENGTH];
+    int start_month;
+    int end_month;
+    int numbOfDepen;
+    int dependencies[];
+} Task;
 
-Task placeholder[i] = {placeholder[0].name = "task_1",
-                .start_month = 1,
-                .end_month = 2,
-                .numbOfDepen = 0,
-                .dependencies = {0}}
-
-struct Task task2 = {
-        .name = "task_2",
+Task task1 = {
+        .name = "task_1",
         .start_month = 1,
-        .end_month = 4,
+        .end_month = 2,
         .numbOfDepen = 0,
         .dependencies = {0}
 };
 
-struct Task task3= {
-        .name = "task_3",
-        .start_month = 3,
-        .end_month = 5,
-        .numbOfDepen = 1,
-        .dependencies = {0}
-};
+Task task2 = {"task_2",1,4,0,{0}};
 
-struct Task task4 = {
-        .name = "task_4",
-        .start_month = 2,
-        .end_month = 4,
-        .numbOfDepen= 2,
-        .dependencies = {0, 1}
-};
+Task task3= {"task_3",3,5,1,{0}};
 
-struct Task task5 = {
-        .name = "task_5",
-        .start_month = 4,
-        .end_month = 5,
-        .numbOfDepen= 1,
-        .dependencies = {2}
-};
+Task task4 = {"task_4",2,4,2,{0, 1}};
 
-struct Task task6 = {
-        .name = "task_6",
-        .start_month = 6,
-        .end_month = 7,
-        .numbOfDepen = 2,
-        .dependencies = {3, 4}
-};
+Task task5 = {"task_5",4,5,1,{2}};
 
-struct Task task7 = {
-        .name = "task_7",
-        .start_month = 7,
-        .end_month = 7,
-        .numbOfDepen = 1,
-        .dependencies = {4}
-};
+Task task6 = {"task_6",6,7,2,{3, 4}};
 
-struct Task task8 = {
-        .name = "task_8",
-        .start_month = 8,
-        .end_month = 9,
-        .numbOfDepen = 1,
-        .dependencies = {6}
-};
+Task task7 = {"task_7",7,7,1,{4}};
 
-struct Task task9 = {
-        .name = "task_9",
-        .start_month = 8,
-        .end_month = 10,
-        .numbOfDepen = 1,
-        .dependencies = {4}
-};
+Task task8 = {"task_8",8,9,1,{6}};
 
-struct Task task10 = {
-        .name = "task_10",
-        .start_month = 11,
-        .end_month = 12,
-        .numbOfDepen = 2,
-        .dependencies = {7,8}
-};
+Task task9 = {"task_9",8,10,1,{4}};
+
+Task task10 = {"task_10",11,12,2,{7,8}};
