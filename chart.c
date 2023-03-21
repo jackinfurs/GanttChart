@@ -4,8 +4,10 @@
 #include "definitions.h"
 #include "struct.h"
 
-// this is a fucking problem
-int maxLength(struct Task tasks[MAX_TASKS]) {
+int maxLength = 0;
+const int numOfTasks =
+
+void max_Length(struct Task tasks[MAX_TASKS]) {
     int numOfTasks = 0;
     for (int i = 0 ; i < numOfTasks ; ++i)
     {
@@ -50,6 +52,7 @@ at newline, skip another line and repeat
 at eof, return 0
 else move forward
  */
+    enum Months {ERR,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec};
     copyFile();
 
     FILE *fp;
@@ -57,7 +60,7 @@ else move forward
     int i = 0;
     int month = 1;
 
-    char f = fgetc(fp);
+    int f = fgetc(fp);
     while (fgetc(fp) != EOF)
     {
         if (f == 'x')
@@ -71,7 +74,7 @@ else move forward
         if (f == 's')
         {
             fseek(fp,-1,SEEK_CUR);
-            fprintf("%*s", max_length, tasks[i].name);
+            fprintf("%*s", maxLength, tasks[i].name);
         }
         i += 1;
     }
