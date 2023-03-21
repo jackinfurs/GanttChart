@@ -5,10 +5,41 @@
 #include "struct.h"
 
 int maxLength = 0;
-const int numOfTasks =
+const int numOfTasks;
+
+enum months
+{
+    JAN = 1,
+    FEB,
+    MAR,
+    APR,
+    MAY,
+    JUN,
+    JUL,
+    AUG,
+    SEP,
+    OCT,
+    NOV,
+    DEC
+};
+
+const char *const months_str[] =
+        {
+                [JAN] = "Jan",
+                [FEB] = "Feb",
+                [MAR] = "Mar",
+                [APR] = "Apr",
+                [MAY] = "May",
+                [JUN] = "Jun",
+                [JUL] = "Jul",
+                [AUG] = "Aug",
+                [SEP] = "Sep",
+                [OCT] = "Oct",
+                [NOV] = "Nov",
+                [DEC] = "Dec"
+        };
 
 void max_Length(struct Task tasks[MAX_TASKS]) {
-    int numOfTasks = 0;
     for (int i = 0 ; i < numOfTasks ; ++i)
     {
         if (strlen(tasks[i].name) > maxLength)
@@ -41,7 +72,7 @@ void copyFile()
         fclose(fptr2);
 }
 
-int ganttChart(struct Task tasks[MAX_TASKS])
+int ganttChart(struct Task tasks[MAX_TASKS],int taskNum)
 {/*
 read through every char until a newline,
 at x, if the start month >= enum value && end month <= enum value, enter X, if not then replace with a space
@@ -52,14 +83,13 @@ at newline, skip another line and repeat
 at eof, return 0
 else move forward
  */
-    enum Months {ERR,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec};
     copyFile();
 
     FILE *fp;
     fp = fopen("format","w");
     int i = 0;
-    int month = 1;
 
+    /*
     int f = fgetc(fp);
     while (fgetc(fp) != EOF)
     {
@@ -78,7 +108,7 @@ else move forward
         }
         i += 1;
     }
-
+    */
     fclose(fp);
     return 0;
 }
