@@ -4,6 +4,6 @@
 #include "struct.h"
 #include "placeholder.c"
 
-struct task placeholder[];
+struct Task placeholder[MAX_TASKS];
 
 #endif

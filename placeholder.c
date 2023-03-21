@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include "definitions.h"
-#include "placeholder.h"
 #include "struct.h"
 
 struct Task placeholder[MAX_TASKS] = {
