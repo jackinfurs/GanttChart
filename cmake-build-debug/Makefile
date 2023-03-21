@@ -128,6 +128,30 @@ BO_Assignment_2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/build
 .PHONY : BO_Assignment_2/fast
 
+chart.obj: chart.c.obj
+.PHONY : chart.obj
+
+# target to build an object file
+chart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/chart.c.obj
+.PHONY : chart.c.obj
+
+chart.i: chart.c.i
+.PHONY : chart.i
+
+# target to preprocess a source file
+chart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/chart.c.i
+.PHONY : chart.c.i
+
+chart.s: chart.c.s
+.PHONY : chart.s
+
+# target to generate assembly for a file
+chart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/chart.c.s
+.PHONY : chart.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -209,6 +233,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... BO_Assignment_2
+	@echo ... chart.obj
+	@echo ... chart.i
+	@echo ... chart.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
