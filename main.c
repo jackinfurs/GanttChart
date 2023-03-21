@@ -27,7 +27,7 @@
  *
  */
 
-void dependencies_count (int numbOfDepen)
+/*void dependencies_count (int numbOfDepen)
 {
     //
     char dependencies[MAX_LENGTH];
@@ -39,7 +39,8 @@ void dependencies_count (int numbOfDepen)
         strcat(" ",input);
         strcpy(&dependencies[i],input);
     }
-}
+}*/
+
 
 int main() {
     struct Task tasks[MAX_TASKS];
@@ -50,13 +51,13 @@ int main() {
     printf("Welcome to the Gantt Generator\n");
     printf("Would you like to use the test example (1) or create your own Gantt from scratch (2)?\n");
     scanf("%d", &option);
-    if (option != 1 && option != 2)
-    {
+    if (option != 1 && option != 2) {
         printf("Invalid options\n");
+        printf("Please enter again:\n");
+        scanf("%d", &option);
     }
 
-    if (option == 1)
-    {
+    if (option == 1) {
         // pre-generated
     } else if (option == 2) {
 
@@ -65,9 +66,10 @@ int main() {
         // How many tasks? (0 invalid, else iterate for number of tasks entered)
         printf("How many tasks would you like to add ? (1-10)\n");
         scanf("%d", &numOfTasks); // using scanf, no need to worry about buffer overflow in 1st year project
-        if (numOfTasks < 1 || numOfTasks > 10)
-        {
+        if (numOfTasks < 1 || numOfTasks > 10) {
             printf("Invalid value\n");
+            printf("Please enter again:\n");
+            scanf("%d", &numOfTasks);
         }
 
         for (i = 0; i < numOfTasks; i++) {
@@ -79,30 +81,31 @@ int main() {
             printf("Please enter the start month (1-12):\n");
             scanf("%d", &tasks[i].start_month);
 
-               if (tasks[i].start_month <= 0 || tasks[i].start_month > 12)
-               {
-                   printf("Invalid value\n");
-               }
+            if (tasks[i].start_month <= 0 || tasks[i].start_month > 12) {
+                printf("Invalid value\n");
+                printf("Please enter again:\n");
+                scanf("%d", &tasks[i].start_month);
+            }
 
             // Start/end month (input <= 0 or > 12, invalid input)
             printf("Please enter the end month (1-12):\n");
             scanf("%d", &tasks[i].end_month);
 
-                if (tasks[i].end_month <= 0 || tasks[i].end_month > 12)
-                {
-                    printf("Invalid value\n");
-                }
+            if (tasks[i].end_month <= 0 || tasks[i].end_month > 12) {
+                printf("Invalid value\n");
+                printf("Please enter again:\n");
+                scanf("%d", &tasks[i].end_month);
+            }
 
             // Number of dependencies (0 = skip, else iterate for number of dependencies entered)
             printf("Please enter how many dependencies this task has:\n");
             scanf("%d", &tasks[i].numbOfDepen);
-            if (tasks[i].numbOfDepen > 0)
-            {
-               for (j = 0; j<tasks[i].numbOfDepen; j++)
-               {
-                   printf("Enter the dependent task:\n");
-                   scanf("%d", &tasks[i].dependencies[j]);
-               }
+            if (tasks[i].numbOfDepen > 0) {
+                for (j = 0; j < tasks[i].numbOfDepen; j++) {
+                    printf("Enter the dependent task:\n");
+                    scanf("%d", &tasks[i].dependencies[j]);
+
+                }
 
                 //dependencies_count(tasks[i].numbOfDepen);
             }
@@ -112,7 +115,58 @@ int main() {
 
     }
 
-}
+    char edit[5] = "edit";
+    char test[5] = "test";
+    char quit[5] = "quit";
+    char choice[5];
+
+    printf("If you wish to edit the Gantt please type ''edit'' / If you wish to run a test, type ''test'' or to\n"
+           "exit, type ''quit'' and then press enter to execute your option.\n");
+            scanf("%s", &choice);
+
+            if (strcmp(choice, edit) == 0) {
+
+                char name[MAX_LENGTH];
+                printf("Please enter the task name you wish to change\n");
+                scanf("%s", &name[i]);
+
+                if (strcmp(name, tasks[i].name) == 0) {
+                printf("Please enter the new task name or write its old one\n");
+                scanf("%s", &tasks[i].name);
+
+                printf("Start month (1-12):\n");
+                scanf("%d", &tasks[i].start_month);
+
+                printf("End month (1-12):\n");
+                scanf("%d", &tasks[i].end_month);
+
+                printf("Enter how many dependencies this task has:\n");
+                printf("%d", &tasks[i].numbOfDepen);
+                if (tasks[i].numbOfDepen > 0) {
+                for (j = 0; j < tasks[i].numbOfDepen; j++) {
+                    printf("Enter the dependent task:\n");
+                    scanf("%d", &tasks[i].dependencies[j]);
+
+                }
+            }
+        }
+            }
+            else if (strcmp(choice, test) == 0)
+                {
+                   printf("test");
+                }
+            else if (strcmp(choice, quit) == 0) {
+                printf("quit");
+            }
+
+
+
+
+
+
+
+    }
+
 
 
 
