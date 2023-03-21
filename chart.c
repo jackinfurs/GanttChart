@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include "chart.h"
 #include "definitions.h"
 #include "struct.h"
 
