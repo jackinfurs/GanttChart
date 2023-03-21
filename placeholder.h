@@ -2,8 +2,6 @@
 // Created by Martina on 15/03/2023.
 //
 
-#include "struct.h"
-
 typedef struct
 {
     char name[MAX_LENGTH];
