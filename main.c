@@ -43,8 +43,6 @@ int main()
     if (option == 1)
     {
         ganttChart(placeholder,MAX_TASKS);
-        // set struct contents equal to placeholder.h
-        // please god fix placeholder.h
 
     } else if (option == 2)
     {

@@ -7,5 +7,5 @@ struct Task
     int start_month;
     int end_month;
     int numbOfDepen;
-    int dependencies[];
+    int dependencies[MAX_TASKS];
 };
