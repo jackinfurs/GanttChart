@@ -58,7 +58,9 @@ int main() {
     }
 
     if (option == 1) {
-        // pre-generated
+
+
+
     } else if (option == 2) {
 
         // Create own series of tasks: using a struct with name, start/end month, and dependencies
@@ -127,26 +129,28 @@ int main() {
 
             if (strcmp(choice, edit) == 0) {
 
+                struct Task New_tasks[MAX_TASKS];
+
                 char name[MAX_LENGTH];
                 printf("Please enter the task name you wish to change\n");
                 scanf("%s", &name[i]);
 
                 if (strcmp(name, tasks[i].name) == 0) {
                 printf("Please enter the new task name or write its old one\n");
-                scanf("%s", &tasks[i].name);
+                scanf("%s", &New_tasks[i].name);
 
                 printf("Start month (1-12):\n");
-                scanf("%d", &tasks[i].start_month);
+                scanf("%d", &New_tasks[i].start_month);
 
                 printf("End month (1-12):\n");
-                scanf("%d", &tasks[i].end_month);
+                scanf("%d", &New_tasks[i].end_month);
 
                 printf("Enter how many dependencies this task has:\n");
-                printf("%d", &tasks[i].numbOfDepen);
+                printf("%d", &New_tasks[i].numbOfDepen);
                 if (tasks[i].numbOfDepen > 0) {
                 for (j = 0; j < tasks[i].numbOfDepen; j++) {
                     printf("Enter the dependent task:\n");
-                    scanf("%d", &tasks[i].dependencies[j]);
+                    scanf("%d", &New_tasks[i].dependencies[j]);
 
                 }
             }
@@ -171,8 +175,8 @@ int main() {
 
 
 
-/*
-void print_chart(struct Task tasks[], int numTasks) {
+
+/*void print_chart(struct Task tasks[], int numTasks) {
     int months = 12;
 
     printf("---------------------------------------------------------------------------------------------");
@@ -183,13 +187,20 @@ void print_chart(struct Task tasks[], int numTasks) {
     for (int i = 0; i < numTasks; i++) {
         printf("|%-20s|", tasks[i].name);
 
-        for (int int j = 0; j < months; j++) {
-            if ()
+        for (int j = 0; j < months; j++) {
+            if (j>=0 && j<=12)
+            {
+                printf(" X ");
+            }
+            else
+            {
+                printf("   ");
+            }
         }
 
     }
-}
-*/
+}*/
+
 
 /*
 ....................................................................................................
