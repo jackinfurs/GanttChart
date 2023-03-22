@@ -52,10 +52,11 @@ void createChart() {
             error();
         }
     }
+    // print chart of above
 }
 
 void editTestQuit() {
-
+    printf("");
 }
 
 int main(void) {
@@ -69,6 +70,7 @@ int main(void) {
     {
         case 1:
             // make chart with placeholder
+            break;
         case 2:
             createChart();
             editTestQuit();
