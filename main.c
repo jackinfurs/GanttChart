@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "struct.h"
 
 void error() {
@@ -7,9 +8,11 @@ void error() {
     exit(-1);
 }
 
+int taskNum;
+
 void createChart() {
     int i,j;
-    int taskNum;
+    taskNum = 0;
     struct Task tasks[MAX_TASKS];
     printf("Please enter how many tasks:\n");
     scanf(" %d",&taskNum);
@@ -55,8 +58,34 @@ void createChart() {
     // print chart of above
 }
 
-void editTestQuit() {
-    printf("");
+void editTestQuit()
+{
+    int i;
+    char input[MAX_LENGTH];
+    printf("If you would like to edit the chart, please type 'edit'\n");
+    printf("If you would like to test a task for circular dependencies, please type 'test'\n");
+    printf("If you would like to quit, please type 'quit'\n ");
+
+    scanf(" %s",input);
+    if (strcmp(input, "edit") == 0)
+    {
+        printf("Please enter the name of the task you wish to change.\n");
+        scanf(" %s",input);
+        // left off here, should the struct be global?
+        for (i = 0 ; i < taskNum ; ++i)
+        {
+
+        }
+    }
+    else if (strcmp(input,"test") == 0)
+    {
+        printf("test");
+    }
+    else if (strcmp(input,"quit") == 0)
+    {
+        printf("\nThank you for using the Gantt Generator.");
+        exit(0);
+    }
 }
 
 int main(void) {
@@ -77,6 +106,7 @@ int main(void) {
             break;
         default:
             error();
+            break;
     }
 
     return 0;
