@@ -1,8 +1,8 @@
 #ifndef BO_ASSIGNMENT_2_CHART_H
 #define BO_ASSIGNMENT_2_CHART_H
 
-#include "chart.c"
+#include "definitions.h"
 
-int ganttChart(struct Task tasks[MAX_TASKS], int taskNum);
+void ganttChart(struct Task tasks[], int numOfTasks);
 
 #endif //BO_ASSIGNMENT_2_CHART_H
