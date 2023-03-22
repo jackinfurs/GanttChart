@@ -1,10 +1,9 @@
-//
-// Created by Martina on 15/03/2023.
-//
-
 #ifndef BO_ASSIGNMENT_2_PLACEHOLDER_H
 #define BO_ASSIGNMENT_2_PLACEHOLDER_H
 
+#include "struct.h"
+#include "placeholder.c"
 
+struct Task placeholder[MAX_TASKS];
 
-#endif //BO_ASSIGNMENT_2_PLACEHOLDER_H
+#endif
