@@ -22,7 +22,7 @@ void error()
     exit(1);
 }
 
-int main()
+int main(int argc, char** argv)
 {
     // init struct for tasks
     struct Task tasks[MAX_TASKS];
@@ -43,7 +43,6 @@ int main()
     if (option == 1)
     {
         ganttChart(placeholder, MAX_TASKS);
-
     } else if (option == 2)
     {
         // Create own series of tasks: using a struct with name, start/end month, and dependencies
@@ -153,7 +152,7 @@ int main()
     }
 }
 
-/*void print_chart(struct Task tasks[], int numTasks) {
+/* void print_chart(struct Task tasks[], int numTasks) {
     int months = 12;
 
     printf("---------------------------------------------------------------------------------------------");
@@ -175,7 +174,8 @@ int main()
             }
         }
     }
-}*/
+}
+ */
 
 
 /*
