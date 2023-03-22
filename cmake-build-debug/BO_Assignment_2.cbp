@@ -93,6 +93,12 @@
 		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/placeholder.h">
 			<Option target="BO_Assignment_2"/>
 		</Unit>
+		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/struct.c">
+			<Option target="BO_Assignment_2"/>
+		</Unit>
+		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/struct.h">
+			<Option target="BO_Assignment_2"/>
+		</Unit>
 		<Unit filename="C:/Users/dynam/CLionProjects/BO-Assignment-2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

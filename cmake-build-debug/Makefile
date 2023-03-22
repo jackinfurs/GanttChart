@@ -200,6 +200,30 @@ placeholder.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/placeholder.c.s
 .PHONY : placeholder.c.s
 
+struct.obj: struct.c.obj
+.PHONY : struct.obj
+
+# target to build an object file
+struct.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/struct.c.obj
+.PHONY : struct.c.obj
+
+struct.i: struct.c.i
+.PHONY : struct.i
+
+# target to preprocess a source file
+struct.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/struct.c.i
+.PHONY : struct.c.i
+
+struct.s: struct.c.s
+.PHONY : struct.s
+
+# target to generate assembly for a file
+struct.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/struct.c.s
+.PHONY : struct.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... placeholder.obj
 	@echo ... placeholder.i
 	@echo ... placeholder.s
+	@echo ... struct.obj
+	@echo ... struct.i
+	@echo ... struct.s
 .PHONY : help
 
 

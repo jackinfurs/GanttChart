@@ -1,5 +1,4 @@
-#include "definitions.h"
-#include "struct.h"
+#include "placeholder.h"
 
 struct Task placeholder[MAX_TASKS] = {
         {"task_1",  1,  2,  0, {0}},

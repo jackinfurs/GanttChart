@@ -1,8 +1,8 @@
-#ifndef BO_ASSIGNMENT_2_PLACEHOLDER_H
-#define BO_ASSIGNMENT_2_PLACEHOLDER_H
+#ifndef BO_ASSIGNMENT_2_PLACEHOLDER
+#define BO_ASSIGNMENT_2_PLACEHOLDER
 
+#include "definitions.h"
 #include "struct.h"
-#include "placeholder.c"
 
 struct Task placeholder[MAX_TASKS];
 

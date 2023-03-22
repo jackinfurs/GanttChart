@@ -1,17 +1,35 @@
 #include <stdio.h>
 #include <string.h>
 #include "chart.h"
+#include "definitions.h"
 
 int maxLength;
 int lineLength;
 
-int maxLenOfString(struct Task task[], int numOfTasks)
+enum months {
+    JAN = 1,
+    FEB,
+    MAR,
+    APR,
+    MAY,
+    JUN,
+    JUL,
+    AUG,
+    SEP,
+    OCT,
+    NOV,
+    DEC,
+};
+
+char *monthsArray[12] = {"JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"};
+
+void maxLenOfString(struct Task tasks[], int numOfTasks)
 {
     for (int i = 0 ; i < numOfTasks ; ++i)
     {
-        if (strlen(task[i].name) > maxLength)
+        if (strlen(tasks[i].name) > maxLength)
         {
-            maxLength = strlen(task[i].name);
+            maxLength = (int) strlen(tasks[i].name);
         }
     }
 }
@@ -28,7 +46,7 @@ void printLines() {
 void ganttChart (struct Task tasks[], int numOfTasks) {
     // clear screen
     int i,j;
-    maxLength = maxLenOfString(tasks,numOfTasks);
+    maxLenOfString(tasks,numOfTasks);
     lineLength = 20;
 
     FILE *fp;

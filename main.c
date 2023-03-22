@@ -9,11 +9,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "chart.h"
+
 // definitions for MAX_LENGTH, EMPTY, MAX_TASKS
+#include "chart.h"
 #include "definitions.h"
-#include "struct.h"
-#include "placeholder.h"
 
 // short bit for error checking
 void error()
@@ -22,7 +21,7 @@ void error()
     exit(1);
 }
 
-int main(int argc, char** argv)
+int main()
 {
     // init struct for tasks
     struct Task tasks[MAX_TASKS];

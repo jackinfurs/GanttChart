@@ -1,0 +1,19 @@
+CMakeFiles/BO_Assignment_2.dir/chart.c.obj: \
+ C:\Users\dynam\CLionProjects\BO-Assignment-2\chart.c \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/string.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Users/dynam/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8836.42/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:\Users\dynam\CLionProjects\BO-Assignment-2\chart.h \
+ C:\Users\dynam\CLionProjects\BO-Assignment-2\struct.h \
+ C:\Users\dynam\CLionProjects\BO-Assignment-2\definitions.h

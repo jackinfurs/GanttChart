@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/dynam/CLionProjects/BO-Assignment-2/chart.c" "CMakeFiles/BO_Assignment_2.dir/chart.c.obj" "gcc" "CMakeFiles/BO_Assignment_2.dir/chart.c.obj.d"
   "C:/Users/dynam/CLionProjects/BO-Assignment-2/main.c" "CMakeFiles/BO_Assignment_2.dir/main.c.obj" "gcc" "CMakeFiles/BO_Assignment_2.dir/main.c.obj.d"
   "C:/Users/dynam/CLionProjects/BO-Assignment-2/placeholder.c" "CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj" "gcc" "CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj.d"
+  "C:/Users/dynam/CLionProjects/BO-Assignment-2/struct.c" "CMakeFiles/BO_Assignment_2.dir/struct.c.obj" "gcc" "CMakeFiles/BO_Assignment_2.dir/struct.c.obj.d"
   )
 
 # Targets to which this target links.
