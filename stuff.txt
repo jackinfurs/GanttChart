@@ -2,8 +2,6 @@ main.c
 include libs
 include local libs
 
-error checking
-
 main
 init struct tasks
 int numoftasks
