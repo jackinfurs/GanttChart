@@ -42,7 +42,7 @@ void ganttChart(struct Task tasks[MAX_LENGTH], int numOfTasks) {
     FILE *fp;
     fp = fopen("format","w+");
 
-    fprintf(fp,"%*s|",maxLength,EMPTY);
+    fprintf(fp,"%*s |",maxLength,EMPTY);
     for (i = JAN ; i < DEC+1 ; ++i)
     {
         fprintf(fp," %s |", monthsArr[i]);
@@ -60,4 +60,25 @@ void ganttChart(struct Task tasks[MAX_LENGTH], int numOfTasks) {
     fclose(fp);
     printLines();
 
+    for (i = 0 ; i < numOfTasks ; ++i)
+    {
+        printf("%*s |",maxLength,tasks[i].name);
+        for (j = JAN ; j < DEC+1 ; ++j)
+        {
+            if (tasks[i].startMonth <= j && tasks[i].endMonth >= j)
+            {
+                printf("  X  |");
+            }
+            else
+            {
+                printf("     |");
+            }
+        }
+        printf(" ");
+        for (j = 0 ; j < tasks[i].numOfDepen ; ++j)
+        {
+            printf("%d ",tasks[i].dependencies[j]);
+        }
+        printLines();
+    }
 }
