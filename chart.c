@@ -4,6 +4,7 @@
 
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include "chart.h"
 
 #define EMPTY   ""
@@ -12,6 +13,16 @@ int maxLength;
 int lineLength;
 
 char *monthsArr[13] = {"","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
+
+void clear() {
+    #if defined(__linux__) || defined(__unix__) || defined(__APPLE__)
+        system("clear");
+    #endif
+
+    #if defined(_WIN32) || defined(_WIN64)
+        system("cls");
+    #endif
+}
 
 void maxLenOfStr(struct Task tasks[], int numOfTasks) {
     for (int i = 0 ; i < numOfTasks ; ++i)
@@ -33,7 +44,8 @@ void printLines() {
 }
 
 void ganttChart(struct Task tasks[MAX_LENGTH], int numOfTasks) {
-    // clear screen
+    clear();
+
     int i,j;
     maxLength = 0;
     lineLength = 20;

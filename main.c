@@ -101,6 +101,7 @@ int main(void) {
     {
         case 1:
             ganttChart(placeholder,MAX_TASKS);
+            editTestQuit();
             break;
         case 2:
             createChart();
