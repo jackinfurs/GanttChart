@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe -E rm -f
+RM = C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Martina\Desktop\BOAssignmento2
+CMAKE_SOURCE_DIR = C:\Users\dynam\CLionProjects\BO-Assignment-2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug\CMakeFiles C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug\CMakeFiles C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -200,30 +200,6 @@ placeholder.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/placeholder.c.s
 .PHONY : placeholder.c.s
 
-struct.obj: struct.c.obj
-.PHONY : struct.obj
-
-# target to build an object file
-struct.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/struct.c.obj
-.PHONY : struct.c.obj
-
-struct.i: struct.c.i
-.PHONY : struct.i
-
-# target to preprocess a source file
-struct.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/struct.c.i
-.PHONY : struct.c.i
-
-struct.s: struct.c.s
-.PHONY : struct.s
-
-# target to generate assembly for a file
-struct.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BO_Assignment_2.dir\build.make CMakeFiles/BO_Assignment_2.dir/struct.c.s
-.PHONY : struct.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -242,9 +218,6 @@ help:
 	@echo ... placeholder.obj
 	@echo ... placeholder.i
 	@echo ... placeholder.s
-	@echo ... struct.obj
-	@echo ... struct.i
-	@echo ... struct.s
 .PHONY : help
 
 

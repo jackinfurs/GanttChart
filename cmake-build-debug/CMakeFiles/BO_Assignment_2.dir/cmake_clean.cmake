@@ -8,8 +8,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/BO_Assignment_2.dir/main.c.obj.d"
   "CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj"
   "CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj.d"
-  "CMakeFiles/BO_Assignment_2.dir/struct.c.obj"
-  "CMakeFiles/BO_Assignment_2.dir/struct.c.obj.d"
   "libBO_Assignment_2.dll.a"
 )
 
