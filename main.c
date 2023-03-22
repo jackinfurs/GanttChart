@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "struct.h"
+#include "chart.h"
+#include "placeholder.h"
 
 void error() {
     printf("Invalid input.");
@@ -55,7 +57,7 @@ void createChart() {
             error();
         }
     }
-    // print chart of above
+    ganttChart(tasks,taskNum);
 }
 
 void editTestQuit()
@@ -98,7 +100,7 @@ int main(void) {
     switch (option)
     {
         case 1:
-            // make chart with placeholder
+            ganttChart(placeholder,MAX_TASKS);
             break;
         case 2:
             createChart();
