@@ -51,11 +51,16 @@ void createChart() {
             {
                 printf("Enter dependent task %d for %s\n",j+1,title);
                 scanf(" %d",&tasks[i].dependencies[j]);
+                if (tasks[i].dependencies[j] > taskNum)
+                {
+                    error();
+                }
             }
-        } else if (tasks[i].numOfDepen < 0)
+        } else if (tasks[i].numOfDepen < 0 || tasks[i].numOfDepen >= MAX_TASKS)
         {
             error();
         }
+        printf("\n");
     }
     ganttChart(tasks,taskNum);
 }
@@ -64,9 +69,9 @@ void editTestQuit()
 {
     int i;
     char input[MAX_LENGTH];
-    printf("If you would like to edit the chart, please type 'edit'\n");
+    printf("\nIf you would like to edit the chart, please type 'edit'\n");
     printf("If you would like to test a task for circular dependencies, please type 'test'\n");
-    printf("If you would like to quit, please type 'quit'\n ");
+    printf("If you would like to quit, please type 'quit'\n");
 
     scanf(" %s",input);
     if (strcmp(input, "edit") == 0)
@@ -114,3 +119,48 @@ int main(void) {
 
     return 0;
 }
+
+/*
+
+                         M                                         M   M
+                             NXXN                                  M  MM
+                          XKOxoodk0X                             NN
+                       X0OxdddolccloxOKN      M             NNK0OkOK
+                   NX0kxddddddocccllclodxk0X           NXK0OkxdddddkX
+                NKOkxdddddddddlcccclllllllodxOKN  NXK0OkxdddddddddddkX  M
+             NKOkxddddddddddddlccccccllllllolodxkkxxddddddddddddxddxdkX
+         NXKOkxddddxxddxddddddllllllllllllloooddddddxxdddxddddddddddddkX
+        N0xdddddc;;;;;;;;;;;;;,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;:cdddddddkX
+        Kxdddddo.                                              .oxddddddkX
+        0ddddddo'                                              .oddddddddkX
+       Nkodddddo'         .;:ccc:;.       ,::;.                .odddddddddOX
+MM     Kxodddddl.      'oOX M     XOo.   'O MN:                .oxdddddddddON
+MM   M Oddddoddl.    .oX  N0xoodkKN O,   'O MN:                .oxddddddddkK M
+  M  MXkoddddodl.   .x   O:.     .;:.    'OMMN:                .odddddddx0N   M
+  M   Kdodoododo.   c   0,               'OMMN:                .odddddxOX
+      Oooooooodl.   dM Mx.               'O MN:                .oxdddkKN
+     Nkooooooodl.   lN  0'               'O MN:                .oddx0N
+M MM Kdooooooodl.   .k M O,       ,;.    'O MN:                .oxkK
+MM  NOoooooooodl.    .xN  NOocccoOX 0:.  'OMM kclccccc'        .dKN
+MM  Xxoooooooool.      ;xKN   MM  NOo'   'OMM MMMMMMMMx.       ,K
+    Kdoooooooooc.        .,:loool:'.     .,:::::::::::'        ;X    MM
+  M Oooooooooool.                                              ;K
+MM Xxloooooooodo'                                              'x0KXNN
+MM Kdlollooodddo.                                              .odddxkO0KXN
+  NOollooodddddo.                                              .oxdddddddxkk0X
+  Xxlloodddddddo.                                              .oddddddddxddkX
+  Koloddddddddxo.   .:::::::::::::::c;.                        .oddddddddddkK
+  0odxddddddddxo'   ;0XXXXXXXXXXXXXXXO'                        .odddddddddxKN
+  X0kxddddddddxo'    .................                         .oddddddddx0N
+    NXOkdddddddo'                                              .odddddddx0N
+       NKOxdddxo,..............................................,oddddddx0N
+          X0kxddoooolllllllllllllllooollllollllllllllllllloolloodddddddON
+            NX0kddddddddddddddddddxk00kdddddddddddddddddddddddddddddddON
+               NKOxdddddddddddddxOKN  NK0OxdddddddddddddddddddddddxddkX
+                  XKOxddddddddxOKN        X0kxddddddddddddddddddddddkX
+                     X0kxdddx0X             NXOkxxdddddddddddddddddxX   M
+                       NKOk0X                  NXXKK0OOkxxxdddddddxK
+                                                        NXXKK0OOkkK
+                             M                       MM          N     M
+
+ */
