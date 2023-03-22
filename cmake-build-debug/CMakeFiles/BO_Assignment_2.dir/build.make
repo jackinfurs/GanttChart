@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\cmake\win\x64\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\cmake\win\x64\bin\cmake.exe -E rm -f
+RM = C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\dynam\CLionProjects\BO-Assignment-2
+CMAKE_SOURCE_DIR = C:\Users\Martina\Desktop\BOAssignmento2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/BO_Assignment_2.dir/depend.make
@@ -69,60 +69,60 @@ include CMakeFiles/BO_Assignment_2.dir/progress.make
 include CMakeFiles/BO_Assignment_2.dir/flags.make
 
 CMakeFiles/BO_Assignment_2.dir/main.c.obj: CMakeFiles/BO_Assignment_2.dir/flags.make
-CMakeFiles/BO_Assignment_2.dir/main.c.obj: C:/Users/dynam/CLionProjects/BO-Assignment-2/main.c
+CMakeFiles/BO_Assignment_2.dir/main.c.obj: C:/Users/Martina/Desktop/BOAssignmento2/main.c
 CMakeFiles/BO_Assignment_2.dir/main.c.obj: CMakeFiles/BO_Assignment_2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BO_Assignment_2.dir/main.c.obj"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BO_Assignment_2.dir/main.c.obj -MF CMakeFiles\BO_Assignment_2.dir\main.c.obj.d -o CMakeFiles\BO_Assignment_2.dir\main.c.obj -c C:\Users\dynam\CLionProjects\BO-Assignment-2\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BO_Assignment_2.dir/main.c.obj"
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BO_Assignment_2.dir/main.c.obj -MF CMakeFiles\BO_Assignment_2.dir\main.c.obj.d -o CMakeFiles\BO_Assignment_2.dir\main.c.obj -c C:\Users\Martina\Desktop\BOAssignmento2\main.c
 
 CMakeFiles/BO_Assignment_2.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BO_Assignment_2.dir/main.c.i"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dynam\CLionProjects\BO-Assignment-2\main.c > CMakeFiles\BO_Assignment_2.dir\main.c.i
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Martina\Desktop\BOAssignmento2\main.c > CMakeFiles\BO_Assignment_2.dir\main.c.i
 
 CMakeFiles/BO_Assignment_2.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BO_Assignment_2.dir/main.c.s"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dynam\CLionProjects\BO-Assignment-2\main.c -o CMakeFiles\BO_Assignment_2.dir\main.c.s
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Martina\Desktop\BOAssignmento2\main.c -o CMakeFiles\BO_Assignment_2.dir\main.c.s
 
 CMakeFiles/BO_Assignment_2.dir/struct.c.obj: CMakeFiles/BO_Assignment_2.dir/flags.make
-CMakeFiles/BO_Assignment_2.dir/struct.c.obj: C:/Users/dynam/CLionProjects/BO-Assignment-2/struct.c
+CMakeFiles/BO_Assignment_2.dir/struct.c.obj: C:/Users/Martina/Desktop/BOAssignmento2/struct.c
 CMakeFiles/BO_Assignment_2.dir/struct.c.obj: CMakeFiles/BO_Assignment_2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BO_Assignment_2.dir/struct.c.obj"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BO_Assignment_2.dir/struct.c.obj -MF CMakeFiles\BO_Assignment_2.dir\struct.c.obj.d -o CMakeFiles\BO_Assignment_2.dir\struct.c.obj -c C:\Users\dynam\CLionProjects\BO-Assignment-2\struct.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BO_Assignment_2.dir/struct.c.obj"
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BO_Assignment_2.dir/struct.c.obj -MF CMakeFiles\BO_Assignment_2.dir\struct.c.obj.d -o CMakeFiles\BO_Assignment_2.dir\struct.c.obj -c C:\Users\Martina\Desktop\BOAssignmento2\struct.c
 
 CMakeFiles/BO_Assignment_2.dir/struct.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BO_Assignment_2.dir/struct.c.i"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dynam\CLionProjects\BO-Assignment-2\struct.c > CMakeFiles\BO_Assignment_2.dir\struct.c.i
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Martina\Desktop\BOAssignmento2\struct.c > CMakeFiles\BO_Assignment_2.dir\struct.c.i
 
 CMakeFiles/BO_Assignment_2.dir/struct.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BO_Assignment_2.dir/struct.c.s"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dynam\CLionProjects\BO-Assignment-2\struct.c -o CMakeFiles\BO_Assignment_2.dir\struct.c.s
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Martina\Desktop\BOAssignmento2\struct.c -o CMakeFiles\BO_Assignment_2.dir\struct.c.s
 
 CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj: CMakeFiles/BO_Assignment_2.dir/flags.make
-CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj: C:/Users/dynam/CLionProjects/BO-Assignment-2/placeholder.c
+CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj: C:/Users/Martina/Desktop/BOAssignmento2/placeholder.c
 CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj: CMakeFiles/BO_Assignment_2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj -MF CMakeFiles\BO_Assignment_2.dir\placeholder.c.obj.d -o CMakeFiles\BO_Assignment_2.dir\placeholder.c.obj -c C:\Users\dynam\CLionProjects\BO-Assignment-2\placeholder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj"
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj -MF CMakeFiles\BO_Assignment_2.dir\placeholder.c.obj.d -o CMakeFiles\BO_Assignment_2.dir\placeholder.c.obj -c C:\Users\Martina\Desktop\BOAssignmento2\placeholder.c
 
 CMakeFiles/BO_Assignment_2.dir/placeholder.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BO_Assignment_2.dir/placeholder.c.i"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dynam\CLionProjects\BO-Assignment-2\placeholder.c > CMakeFiles\BO_Assignment_2.dir\placeholder.c.i
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Martina\Desktop\BOAssignmento2\placeholder.c > CMakeFiles\BO_Assignment_2.dir\placeholder.c.i
 
 CMakeFiles/BO_Assignment_2.dir/placeholder.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BO_Assignment_2.dir/placeholder.c.s"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dynam\CLionProjects\BO-Assignment-2\placeholder.c -o CMakeFiles\BO_Assignment_2.dir\placeholder.c.s
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Martina\Desktop\BOAssignmento2\placeholder.c -o CMakeFiles\BO_Assignment_2.dir\placeholder.c.s
 
 CMakeFiles/BO_Assignment_2.dir/chart.c.obj: CMakeFiles/BO_Assignment_2.dir/flags.make
-CMakeFiles/BO_Assignment_2.dir/chart.c.obj: C:/Users/dynam/CLionProjects/BO-Assignment-2/chart.c
+CMakeFiles/BO_Assignment_2.dir/chart.c.obj: C:/Users/Martina/Desktop/BOAssignmento2/chart.c
 CMakeFiles/BO_Assignment_2.dir/chart.c.obj: CMakeFiles/BO_Assignment_2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/BO_Assignment_2.dir/chart.c.obj"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BO_Assignment_2.dir/chart.c.obj -MF CMakeFiles\BO_Assignment_2.dir\chart.c.obj.d -o CMakeFiles\BO_Assignment_2.dir\chart.c.obj -c C:\Users\dynam\CLionProjects\BO-Assignment-2\chart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/BO_Assignment_2.dir/chart.c.obj"
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/BO_Assignment_2.dir/chart.c.obj -MF CMakeFiles\BO_Assignment_2.dir\chart.c.obj.d -o CMakeFiles\BO_Assignment_2.dir\chart.c.obj -c C:\Users\Martina\Desktop\BOAssignmento2\chart.c
 
 CMakeFiles/BO_Assignment_2.dir/chart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BO_Assignment_2.dir/chart.c.i"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\dynam\CLionProjects\BO-Assignment-2\chart.c > CMakeFiles\BO_Assignment_2.dir\chart.c.i
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Martina\Desktop\BOAssignmento2\chart.c > CMakeFiles\BO_Assignment_2.dir\chart.c.i
 
 CMakeFiles/BO_Assignment_2.dir/chart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BO_Assignment_2.dir/chart.c.s"
-	C:\Users\dynam\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\dynam\CLionProjects\BO-Assignment-2\chart.c -o CMakeFiles\BO_Assignment_2.dir\chart.c.s
+	C:\Users\Martina\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8617.54\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Martina\Desktop\BOAssignmento2\chart.c -o CMakeFiles\BO_Assignment_2.dir\chart.c.s
 
 # Object files for target BO_Assignment_2
 BO_Assignment_2_OBJECTS = \
@@ -142,7 +142,7 @@ BO_Assignment_2.exe: CMakeFiles/BO_Assignment_2.dir/build.make
 BO_Assignment_2.exe: CMakeFiles/BO_Assignment_2.dir/linklibs.rsp
 BO_Assignment_2.exe: CMakeFiles/BO_Assignment_2.dir/objects1.rsp
 BO_Assignment_2.exe: CMakeFiles/BO_Assignment_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable BO_Assignment_2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable BO_Assignment_2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BO_Assignment_2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +154,6 @@ CMakeFiles/BO_Assignment_2.dir/clean:
 .PHONY : CMakeFiles/BO_Assignment_2.dir/clean
 
 CMakeFiles/BO_Assignment_2.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\dynam\CLionProjects\BO-Assignment-2 C:\Users\dynam\CLionProjects\BO-Assignment-2 C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug C:\Users\dynam\CLionProjects\BO-Assignment-2\cmake-build-debug\CMakeFiles\BO_Assignment_2.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Martina\Desktop\BOAssignmento2 C:\Users\Martina\Desktop\BOAssignmento2 C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug C:\Users\Martina\Desktop\BOAssignmento2\cmake-build-debug\CMakeFiles\BO_Assignment_2.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/BO_Assignment_2.dir/depend
 
