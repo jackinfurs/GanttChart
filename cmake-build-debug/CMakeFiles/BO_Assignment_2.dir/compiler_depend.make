@@ -16,7 +16,6 @@ CMakeFiles/BO_Assignment_2.dir/chart.c.obj: C:/Users/Martina/Desktop/BOAssignmen
   C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/x86_64-w64-mingw32/include/string.h \
   C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
   C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
-  C:/Users/Martina/Desktop/BOAssignmento2/chart.h \
   C:/Users/Martina/Desktop/BOAssignmento2/definitions.h \
   C:/Users/Martina/Desktop/BOAssignmento2/struct.h \
   C:/Users/Martina/Desktop/BOAssignmento2/struct.c
@@ -45,16 +44,14 @@ CMakeFiles/BO_Assignment_2.dir/main.c.obj: C:/Users/Martina/Desktop/BOAssignment
   C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/x86_64-w64-mingw32/include/errno.h \
   C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/x86_64-w64-mingw32/include/string.h \
   C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
-  C:/Users/Martina/Desktop/BOAssignmento2/chart.h \
   C:/Users/Martina/Desktop/BOAssignmento2/definitions.h \
   C:/Users/Martina/Desktop/BOAssignmento2/struct.h \
-  C:/Users/Martina/Desktop/BOAssignmento2/struct.c \
-  C:/Users/Martina/Desktop/BOAssignmento2/placeholder.h
+  C:/Users/Martina/Desktop/BOAssignmento2/struct.c
 
 CMakeFiles/BO_Assignment_2.dir/placeholder.c.obj: C:/Users/Martina/Desktop/BOAssignmento2/placeholder.c \
-  C:/Users/Martina/Desktop/BOAssignmento2/placeholder.h \
-  C:/Users/Martina/Desktop/BOAssignmento2/struct.c \
-  C:/Users/Martina/Desktop/BOAssignmento2/definitions.h
+  C:/Users/Martina/Desktop/BOAssignmento2/definitions.h \
+  C:/Users/Martina/Desktop/BOAssignmento2/struct.h \
+  C:/Users/Martina/Desktop/BOAssignmento2/struct.c
 
 CMakeFiles/BO_Assignment_2.dir/struct.c.obj: C:/Users/Martina/Desktop/BOAssignmento2/struct.c \
   C:/Users/Martina/Desktop/BOAssignmento2/definitions.h
@@ -96,8 +93,6 @@ C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin
 
 C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h:
 
-C:/Users/Martina/Desktop/BOAssignmento2/chart.h:
-
 C:/Users/Martina/Desktop/BOAssignmento2/definitions.h:
 
 C:/Users/Martina/Desktop/BOAssignmento2/struct.h:
@@ -117,7 +112,5 @@ C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin
 C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/mm_malloc.h:
 
 C:/Users/Martina/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/bin/mingw/x86_64-w64-mingw32/include/errno.h:
-
-C:/Users/Martina/Desktop/BOAssignmento2/placeholder.h:
 
 C:/Users/Martina/Desktop/BOAssignmento2/placeholder.c:

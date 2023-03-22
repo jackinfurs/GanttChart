@@ -9,11 +9,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "chart.h"
+//#include "chart.h"
 // definitions for MAX_LENGTH, EMPTY, MAX_TASKS
 #include "definitions.h"
 #include "struct.h"
-#include "placeholder.h"
+//#include "placeholder.h"
 
 // short bit for error checking
 void error()
@@ -21,6 +21,32 @@ void error()
     printf("Invalid entry.\n");
     exit(1);
 }
+
+// !!
+// pick a task to check it has circular dependencies
+void printDependentTask(struct Task tasks[], int taskID, int visitedTasks[])
+{
+    printf("Which task would you like to test?\n");
+    scanf (" %d", &taskID);
+
+    printf("%d ->", taskID);
+    visitedTasks[taskID] = 1;
+
+    for(int i=0; i<tasks[taskID].numbOfDepen; i++)
+    {
+        int dependent_Task = tasks[taskID].dependencies[i];
+
+        if(visitedTasks[dependent_Task] == 0)
+        {
+            printDependentTask(tasks, dependent_Task, );
+        }
+        else
+        {
+            printf("!!!Warning potential circular dependencies!!!");
+        }
+    }
+}
+
 
 int main(int argc, char** argv)
 {
@@ -42,7 +68,7 @@ int main(int argc, char** argv)
     // example (to edit)
     if (option == 1)
     {
-        ganttChart(placeholder, MAX_TASKS);
+       // ganttChart(placeholder, MAX_TASKS);
     } else if (option == 2)
     {
         // Create own series of tasks: using a struct with name, start/end month, and dependencies
@@ -145,8 +171,10 @@ int main(int argc, char** argv)
         }
     } else if (strcmp(choice, test) == 0)
     {
-        printf("test");
-    } else if (strcmp(choice, quit) == 0)
+        int taskID;
+        printDependentTask(tasks, taskID, tasks);
+    }
+    else if (strcmp(choice, quit) == 0)
     {
         printf("quit");
     }
