@@ -90,8 +90,7 @@ void editTestQuit()
     }
     else if (strcmp(input,"quit") == 0)
     {
-        printf("\nThank you for using the Gantt Generator.");
-        exit(0);
+        printf("\nThank you for using the Gantt Generator.\n");
     }
 }
 
