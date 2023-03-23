@@ -2,6 +2,7 @@
 // Martina D'Argenzio   22789139
 // Jack Dunne           22483576
 // https://csgitlab.ucd.ie/jack-dunne626/bo-assignment-2.git
+// using C11
 
 // what's wrong with pen and paper?
 
