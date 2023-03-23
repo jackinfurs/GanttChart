@@ -26,7 +26,7 @@ scanf, overwriting the task selected by the user. The program searches for a tas
 
 **How was a circular dependency search implemented?**
 	
-Insert text here.
+Two circular dependency searches were implemented recursively and are called when the user enters “test” into the console upon viewing their Gantt chart. The first function, printDependencies, was used at the beginning of testing any one specified task. If a task was visited more than once, another function named “circularCheck” would be called. If a dependent task existed such that it had no dependencies, it would return a success. Otherwise, it would fail. 
 
 
 **What’s your ASCII art about?**
