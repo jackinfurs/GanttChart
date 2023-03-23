@@ -1,5 +1,5 @@
 // COMP10050 Assignment 2
-// Martina D'Argenzio
+// Martina D'Argenzio   22789139
 // Jack Dunne           22483576
 // https://csgitlab.ucd.ie/jack-dunne626/bo-assignment-2.git
 
@@ -32,7 +32,7 @@ void createChart() {
     // init global int taskNum
     taskNum = 0;
     printf("Please enter how many tasks:\n");
-    scanf(" %d", &taskNum);
+    scanf(" %d", &taskNum); // scanf used, no need to worry about buffer overflow in such a low-level project
     // error checking
     if (taskNum < 1 || taskNum > 10) {
         error();
@@ -75,8 +75,8 @@ void createChart() {
                 }
             }
         }
-        // error checking for negative / 10 or more tasks
-        // i.e. a task cannot be dependent on 10 or above because then it'd have to depend on itself, impossible
+            // error checking for negative / 10 or more tasks
+            // i.e. a task cannot be dependent on 10 or above because then it'd have to depend on itself, impossible
         else if (tasks[i].numOfDepen < 0 || tasks[i].numOfDepen >= MAX_TASKS) {
             error();
         }
@@ -139,8 +139,7 @@ void editTestQuit(struct Task task[MAX_LENGTH], int taskQuant) {
                     error();
                 }
             }
-        }
-        else if (task[i].numOfDepen < 0 || task[i].numOfDepen >= MAX_TASKS) {
+        } else if (task[i].numOfDepen < 0 || task[i].numOfDepen >= MAX_TASKS) {
             error();
         }
         printf("\n");
@@ -151,11 +150,11 @@ void editTestQuit(struct Task task[MAX_LENGTH], int taskQuant) {
         // (considered a recursive call but not really a problem, depends on user input)
         editTestQuit(task, taskQuant);
     }
-    // enter circular dependency test function here
+        // enter circular dependency test function here
     else if (strcmp(input, "test") == 0) {
         printf("test");
     }
-    // quit program safely
+        // quit program safely
     else if (strcmp(input, "quit") == 0) {
         printf("\nThank you for using the Gantt Generator.\n");
     }
@@ -168,7 +167,7 @@ int main(void) {
 
     printf("Welcome to the Gantt Generator.\n");
     printf("Please enter:\n\t1: to view an example chart\n\t2: to create your own chart\n");
-    scanf(" %d", &option);
+    scanf(" %d", &option); // scanf used, no need to worry about buffer overflow in such a low-level project
 
     switch (option) {
         case 1: // view example chart with placeholder struct array of 10 tasks
