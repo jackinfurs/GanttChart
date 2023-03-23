@@ -1,0 +1,96 @@
+//
+// Created by dynam on 22/03/2023.
+//
+
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "chart.h"
+
+#define EMPTY   ""
+
+int maxLength;
+int lineLength;
+
+char *monthsArr[13] = {"","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"};
+
+void clear() {
+    #if defined(__linux__) || defined(__unix__) || defined(__APPLE__)
+        system("clear");
+    #endif
+
+    #if defined(_WIN32) || defined(_WIN64)
+        system("cls");
+    #endif
+}
+
+void maxLenOfStr(struct Task tasks[], int numOfTasks) {
+    for (int i = 0 ; i < numOfTasks ; ++i)
+    {
+        if (strlen(tasks[i].name) > maxLength)
+        {
+            maxLength = (int) strlen(tasks[i].name);
+        }
+    }
+}
+
+void printLines() {
+    printf("\n");
+    for (int i = 0 ; i < lineLength ; ++i)
+    {
+        printf("-");
+    }
+    printf("\n");
+}
+
+void ganttChart(struct Task tasks[MAX_LENGTH], int numOfTasks) {
+    clear();
+
+    int i,j;
+    maxLength = 0;
+    lineLength = 20;
+    maxLenOfStr(tasks,numOfTasks);
+
+    FILE *fp;
+    fp = fopen("format","w+");
+
+    fprintf(fp,"%*s |",maxLength,EMPTY);
+    for (i = JAN ; i < DEC+1 ; ++i)
+    {
+        fprintf(fp," %s |", monthsArr[i]);
+    }
+    fprintf(fp," Dependencies");
+    fseek(fp,0,SEEK_END);
+    lineLength += ftell(fp); // fuckin genius
+    rewind(fp);
+    int c = fgetc(fp);
+    while (c != EOF)
+    {
+        printf ("%c", c);
+        c = fgetc(fp);
+    }
+    fclose(fp);
+    printLines();
+
+    for (i = 0 ; i < numOfTasks ; ++i)
+    {
+        printf("%*s |",maxLength,tasks[i].name);
+        for (j = JAN ; j < DEC+1 ; ++j)
+        {
+            if (tasks[i].startMonth <= j && tasks[i].endMonth >= j)
+            {
+                printf("  X  |");
+            }
+            else
+            {
+                printf("     |");
+            }
+        }
+        printf(" ");
+        for (j = 0 ; j < tasks[i].numOfDepen ; ++j)
+        {
+            printf("%d ",tasks[i].dependencies[j]);
+        }
+        printLines();
+    }
+}
