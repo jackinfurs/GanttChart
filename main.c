@@ -1,4 +1,5 @@
 // COMP10050 Assignment 2
+// Group B0:
 // Martina D'Argenzio   22789139
 // Jack Dunne           22483576
 // https://csgitlab.ucd.ie/jack-dunne626/bo-assignment-2.git
@@ -88,6 +89,81 @@ void createChart() {
     ganttChart(tasks, taskNum);
 }
 
+int CircularCheck(struct Task task[], int taskID, int visited_numb[], int taskNum) {
+    visited_numb[taskNum++] = taskID;
+    if (taskNum > 10) {
+        return 1;
+    }
+
+    if (task[taskID].numOfDepen == 0) {
+        return 0;
+    }
+
+    for (int i = 0; i < task[i].numOfDepen; i++) {
+        int dependent_task = task[taskID].dependencies[i];
+
+        for (int j = 0; j < taskNum; j++) {
+            if (dependent_task == visited_numb[j]) {
+                return 1;
+            }
+        }
+
+        if (CircularCheck(task, taskID, visited_numb, taskNum)) {
+            return 1;
+        }
+    }
+
+    return 0;
+}
+
+/*
+void printDependencies(struct Task task[], int taskID, int visited_Task[])
+{
+    int i;
+    printf("%d -> ", taskID);
+    visited_Task[taskID-1] += 1;
+    // add 1 to index of task id
+
+    // loop for number of dependencies in task
+    for (i=0; i<tasks[taskID-1].numOfDepen; i++)
+    {
+        // go to dependent task i of id'd task
+        int dependent_Task = task[taskID-1].dependencies[i];
+
+        if (visited_Task[taskID-1] == 0)
+        {
+            // dependent_task might be problem
+            printDependencies(task, dependent_Task, visited_Task);
+        }
+        else
+        {
+            printf("!!! Warning potential circular dependencies !!!");
+        }
+    }
+    printf("\nComplete.\n");
+}
+ */
+
+void printDependencies(struct Task task[MAX_LENGTH], int taskID, int visitedTask[]) {
+    int i;
+
+    printf("%d -> ", taskID);
+    if (task[taskID - 1].numOfDepen == 0) {
+        printf("END\nNo circular dependencies found.\n");
+    } else {
+        for (i = 0; i < task[taskID - 1].numOfDepen; ++i) {
+            // where we left off
+            if (visitedTask[taskID - 1] == 0) {
+                taskID = task[taskID - 1].dependencies[i];
+                visitedTask[taskID - 1] += 1;
+                printDependencies(task, taskID, visitedTask);
+            } else {
+                printf("!!! Warning potential circular dependencies !!!");
+            }
+        }
+    }
+}
+
 // function to edit, test, or quit
 // provided either user-made struct or placeholder-made struct
 void editTestQuit(struct Task task[MAX_LENGTH], int taskQuant) {
@@ -153,7 +229,15 @@ void editTestQuit(struct Task task[MAX_LENGTH], int taskQuant) {
     }
         // enter circular dependency test function here
     else if (strcmp(input, "test") == 0) {
-        printf("test");
+
+        int taskID;
+        printf("Please enter the task number you wish to test\n");
+        scanf(" %d", &taskID);
+
+        int visitedTask[MAX_TASKS] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+
+        printDependencies(task, taskID, visitedTask);
+        // go to taskID in task array with an initialised visitedTask array
     }
         // quit program safely
     else if (strcmp(input, "quit") == 0) {
