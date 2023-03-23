@@ -4,7 +4,6 @@
 #include <string.h>
 // include local libs
 #include "chart.h"
-
 // define empty string for readability
 #define EMPTY   ""
 
@@ -125,7 +124,6 @@ void ganttChart(struct Task tasks[MAX_LENGTH], int numOfTasks) {
         {
             printf("%d ",tasks[i].dependencies[j]);
         }
-        // print divider
         printLines();
     }
 }
