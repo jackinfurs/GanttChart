@@ -90,33 +90,6 @@ void createChart() {
     ganttChart(tasks, taskNum);
 }
 
-int circularCheck(struct Task task[], int taskID, int visited_numb[], int taskNum) {
-    visited_numb[taskNum++] = taskID;
-    if (taskNum > 10) {
-        return 1;
-    }
-
-    if (task[taskID].numOfDepen == 0) {
-        return 0;
-    }
-
-    for (int i = 0; i < task[i].numOfDepen; i++) {
-        int dependent_task = task[taskID].dependencies[i];
-
-        for (int j = 0; j < taskNum; j++) {
-            if (dependent_task == visited_numb[j]) {
-                return 1;
-            }
-        }
-
-        if (circularCheck(task, taskID, visited_numb, taskNum)) {
->>>>>>> 5c0932fcfd3ed8547880f53c7201e3c5569f25df
-            return 1;
-        }
-    }
-    return 0;
-}
-
 int circularCheck(struct Task task[], int taskID) {
     printf("%d -> ",taskID);
     if (task[taskID-1].numOfDepen == 0)
@@ -158,7 +131,7 @@ void printDependencies(struct Task task[MAX_LENGTH], int taskID, int visitedTask
                 dependencyCheck = 0;
                 if (circularCheck(task,taskID) == 0)
                 {
-                    printf("No circular dependencies found.\n");
+                    printf("\nNo circular dependencies found.\n");
                 }
                 else
                 {
