@@ -89,7 +89,7 @@ void createChart() {
     ganttChart(tasks, taskNum);
 }
 
-int CircularCheck(struct Task task[], int taskID, int visited_numb[], int taskNum) {
+int circularCheck(struct Task task[], int taskID, int visited_numb[], int taskNum) {
     visited_numb[taskNum++] = taskID;
     if (taskNum > 10) {
         return 1;
@@ -108,7 +108,7 @@ int CircularCheck(struct Task task[], int taskID, int visited_numb[], int taskNu
             }
         }
 
-        if (CircularCheck(task, taskID, visited_numb, taskNum)) {
+        if (circularCheck(task, taskID, visited_numb, taskNum)) {
             return 1;
         }
     }
