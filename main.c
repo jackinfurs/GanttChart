@@ -58,7 +58,7 @@ void createChart() {
 }
 
 void editTestQuit(struct Task task[MAX_LENGTH], int taskQuant) {
-    int i,j;
+    int i, j;
     char input[MAX_LENGTH];
     printf("\nIf you would like to edit a task, please type 'edit'\n");
     printf("If you would like to test a task for circular dependencies, please type 'test'\n");
@@ -106,8 +106,8 @@ void editTestQuit(struct Task task[MAX_LENGTH], int taskQuant) {
             error();
         }
         printf("\n");
-        ganttChart(task,taskQuant);
-        editTestQuit(task,taskQuant);
+        ganttChart(task, taskQuant);
+        editTestQuit(task, taskQuant);
     } else if (strcmp(input, "test") == 0) {
         printf("test");
     } else if (strcmp(input, "quit") == 0) {
@@ -125,11 +125,11 @@ int main(void) {
     switch (option) {
         case 1:
             ganttChart(placeholder, MAX_TASKS);
-            editTestQuit(placeholder,MAX_TASKS);
+            editTestQuit(placeholder, MAX_TASKS);
             break;
         case 2:
             createChart();
-            editTestQuit(tasks,taskNum);
+            editTestQuit(tasks, taskNum);
             break;
         default:
             error();
