@@ -167,13 +167,13 @@ void printDependencies(struct Task task[MAX_LENGTH], int taskID, int visitedTask
                 // if task has been visited before
             else
             {
-                printf("\n!!! Warning potential circular dependencies !!!\n");
+                printf("\n!!! Warning: potential circular dependencies !!!\n");
                 // global var dependencyCheck used for recursive case 1 in circular check function
                 dependencyCheck = 0;
                 // if successful exit in potential circular dependency
                 if (circularCheck(task, taskID) == 0)
                 {
-                    printf("\nNo circular dependencies found.\n");
+                    printf("END\nNo circular dependencies found.\n");
                 } else
                 {
                     printf("Circular dependency found. Please fix.\n");
