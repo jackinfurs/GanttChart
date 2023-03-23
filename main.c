@@ -1,80 +1,117 @@
+// COMP10050 Assignment 2
+// Martina D'Argenzio
+// Jack Dunne           22483576
+// https://csgitlab.ucd.ie/jack-dunne626/bo-assignment-2.git
+
+// what's wrong with pen and paper?
+
+// import necessary libs
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "struct.h"
-#include "chart.h"
+// import local libs
+#include "chart.h" // chart.c
 #include "placeholder.h"
+#include "struct.h"
 
+// for error checking
 void error() {
     printf("Invalid input.");
     exit(-1);
 }
 
+// global struct array for entering tasks
 struct Task tasks[MAX_TASKS];
+// global int for number of tasks in array
 int taskNum;
 
+// function for user to create their own tasks
 void createChart() {
+    // increments
     int i, j;
+    // init global int taskNum
     taskNum = 0;
     printf("Please enter how many tasks:\n");
     scanf(" %d", &taskNum);
+    // error checking
     if (taskNum < 1 || taskNum > 10) {
         error();
     }
+    // loop for amount of tasks
     for (i = 0; i < taskNum; ++i) {
+        // ptr title for brevity, more details below
         char *title;
+
         printf("Enter the name of task %d\n", i + 1);
         scanf(" %s", tasks[i].name);
         title = tasks[i].name;
 
+        // title = tasks[i].name, looks nicer
         printf("Enter the start month for %s\n", title);
         scanf(" %d", &tasks[i].startMonth);
+        // error checking for out of bounds, JAN = 1 DEC = 12 as per enum
         if (tasks[i].startMonth < JAN || tasks[i].startMonth > DEC) {
             error();
         }
 
         printf("Enter the end month for %s\n", title);
         scanf(" %d", &tasks[i].endMonth);
+        // error checking to make sure end month is not before start month/out of bounds
         if (tasks[i].endMonth < tasks[i].startMonth || tasks[i].endMonth > DEC) {
             error();
         }
 
         printf("Enter the number of dependencies for %s\n", title);
         scanf(" %d", &tasks[i].numOfDepen);
+        // loop for 1 or more dependencies, entered above
         if (tasks[i].numOfDepen > 0) {
+            // loop for dependencies entered above, add to dependency array in struct
             for (j = 0; j < tasks[i].numOfDepen; ++j) {
                 printf("Enter dependent task %d for %s\n", j + 1, title);
                 scanf(" %d", &tasks[i].dependencies[j]);
-                if (tasks[i].dependencies[j] > taskNum) {
+                // error checking for out of bounds, if task entered above is greater than the num of tasks entered
+                if (tasks[i].dependencies[j] > taskNum || tasks[i].dependencies[j] < 1) {
                     error();
                 }
             }
-        } else if (tasks[i].numOfDepen < 0 || tasks[i].numOfDepen >= MAX_TASKS) {
+        }
+        // error checking for negative / 10 or more tasks
+        // i.e. a task cannot be dependent on 10 or above because then it'd have to depend on itself, impossible
+        else if (tasks[i].numOfDepen < 0 || tasks[i].numOfDepen >= MAX_TASKS) {
             error();
         }
+        // new line for style points
         printf("\n");
     }
+    // print chart with tasks as created above, see chart.c for details
     ganttChart(tasks, taskNum);
 }
 
+// function to edit, test, or quit
+// provided either user-made struct or placeholder-made struct
 void editTestQuit(struct Task task[MAX_LENGTH], int taskQuant) {
+    // increments
     int i, j;
+    // for console input
     char input[MAX_LENGTH];
     printf("\nIf you would like to edit a task, please type 'edit'\n");
     printf("If you would like to test a task for circular dependencies, please type 'test'\n");
     printf("If you would like to quit, please type 'quit'\n");
-
     scanf(" %s", input);
+
+    // edit
     if (strcmp(input, "edit") == 0) {
         printf("Please enter the name of the task you wish to change.\n");
         scanf(" %s", input);
         i = 0;
+        // run through struct array to find index of task in array by name
         while (strcmp(input, task[i].name) != 0) {
             if (i > taskQuant) {
                 error();
             }
             ++i;
         }
+        // brevity, see above
         char *title;
         printf("Re-enter the name of %s\n", task[i].name);
         scanf(" %s", task[i].name);
@@ -98,24 +135,35 @@ void editTestQuit(struct Task task[MAX_LENGTH], int taskQuant) {
             for (j = 0; j < task[i].numOfDepen; ++j) {
                 printf("Enter dependent task %d for %s\n", j + 1, title);
                 scanf(" %d", &task[i].dependencies[j]);
-                if (task[i].dependencies[j] > taskQuant) {
+                if (task[i].dependencies[j] > taskQuant || task[i].dependencies[j] < 1) {
                     error();
                 }
             }
-        } else if (task[i].numOfDepen < 0 || task[i].numOfDepen >= MAX_TASKS) {
+        }
+        else if (task[i].numOfDepen < 0 || task[i].numOfDepen >= MAX_TASKS) {
             error();
         }
         printf("\n");
+
+        // print gantt chart with newly-edited struct entries, see chart.c for details
         ganttChart(task, taskQuant);
+        // after printing, rerun function
+        // (considered a recursive call but not really a problem, depends on user input)
         editTestQuit(task, taskQuant);
-    } else if (strcmp(input, "test") == 0) {
+    }
+    // enter circular dependency test function here
+    else if (strcmp(input, "test") == 0) {
         printf("test");
-    } else if (strcmp(input, "quit") == 0) {
+    }
+    // quit program safely
+    else if (strcmp(input, "quit") == 0) {
         printf("\nThank you for using the Gantt Generator.\n");
     }
 }
 
+// main function
 int main(void) {
+    // user input
     int option;
 
     printf("Welcome to the Gantt Generator.\n");
@@ -123,19 +171,18 @@ int main(void) {
     scanf(" %d", &option);
 
     switch (option) {
-        case 1:
+        case 1: // view example chart with placeholder struct array of 10 tasks
             ganttChart(placeholder, MAX_TASKS);
             editTestQuit(placeholder, MAX_TASKS);
             break;
-        case 2:
+        case 2: // create own chart
             createChart();
             editTestQuit(tasks, taskNum);
             break;
-        default:
+        default: // error checking, anything other than 1 or 2
             error();
             break;
     }
-
     return 0;
 }
 

@@ -1,7 +1,3 @@
-//
-// Created by dynam on 22/03/2023.
-//
-
 #ifndef BOASSIGNMENT2_PLACEHOLDER_H
 #define BOASSIGNMENT2_PLACEHOLDER_H
 
